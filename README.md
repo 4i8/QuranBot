@@ -1,3 +1,5 @@
+# Quran-قرآن
+
 <div align="center">
   <p>
  <a href="https://discord.com/api/oauth2/authorize?client_id=692060368780001300&permissions=138042273056&scope=bot%20applications.commands"><img  src="https://cdn.discordapp.com/icons/694418750807736330/d6cce554798fdcd441d6b3e487ba116e.webp?size=4096" width="300" alt="Quran" /></a>
