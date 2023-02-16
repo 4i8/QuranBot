@@ -1,0 +1,12 @@
+{
+    "interaction_create_cooldown_warn": "Cooldown you can try after {{time}}",
+    "player_move_stoped": "{{emoji}} | The Audio has been stopped and the Queue removed {{channel}}",
+    "track_start_default_embed": "{{emoji}} | {{title}} \n By {{requester}}",
+    "track_start_not_in_voice": "Please join a voice channel first {{channel}}",
+    "track_start_limited_volume": "{{play_emoji}} | {{title}} \n{{warn_emoji}} | The volume must be in `10 - 150` range",
+    "track_start_volume_now": "{{play_emoji}} | {{title}} \n{{volume_emoji}} | Current volume level {{volume}}",
+    "track_start_stoped": "{{emoji}} | The Audio has been stopped. {{title}}",
+    "track_start_paused": "{{emoji}} | The Audio has been paused",
+    "track_start_resumed": "{{emoji}} | The Audio has been resumed",
+    "track_start_skipped": "{{emoji}} | Skipped {{title}}"
+}

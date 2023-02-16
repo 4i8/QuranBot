@@ -1,0 +1,386 @@
+[
+	{
+		"id": 1,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/001.mp3",
+		"qsa": "قصة إبراهيم عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 2,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/002.mp3",
+		"qsa": "قصة ادريس ونوح عليهما السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 3,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/003.mp3",
+		"qsa": "قصة آدم عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 4,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/004.mp3",
+		"qsa": "قصة الخضر عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 5,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/005.mp3",
+		"qsa": "قصة أيوب عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 6,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/006.mp3",
+		"qsa": "قصة داوود عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 7,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/007.mp3",
+		"qsa": "قصة زكريا و يحي عليهما السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 8,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/008.mp3",
+		"qsa": "قصة سليمان و العزير عليهما السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 9,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/009.mp3",
+		"qsa": "قصة شعيب عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 10,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/010.mp3",
+		"qsa": "قصة صالح عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 11,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/011.mp3",
+		"qsa": "قصة عيسى عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 12,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/012.mp3",
+		"qsa": "قصة لوط عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 13,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/013.mp3",
+		"qsa": "قصة محمد صلّ الله عليه و سلم",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 14,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/014.mp3",
+		"qsa": "قصة مريم بنت عمران عليها السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 15,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/015.mp3",
+		"qsa": "قصة موسى عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 16,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/016.mp3",
+		"qsa": "قصة هود عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 17,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/017.mp3",
+		"qsa": "قصة يوسف عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 18,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/018.mp3",
+		"qsa": "قصة يوشع بن نون عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 19,
+		"name": "نبيل العوضي",
+		"server": "https://ia600409.us.archive.org/11/items/al3awadi-qasas-anbiya/019.mp3",
+		"qsa": "قصة يونس عليه السلام",
+		"count": "19",
+		"letter": ""
+	},
+	{
+		"id": 20,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/ماقبل-خلق-آدم-عليه-السلام-قصص-الأنبياء-ح-1-1.mp3?_=1",
+		"qsa": "ما قبل خلق آدم عليه السلام",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 21,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-آدم-عليه-السلام-1-قصص-الأنبياء-ح-2.mp3?_=2",
+		"qsa": "خلق الله تعالى لآدم وسجود الملائكة له",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 22,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-آدم-عليه-السلام-2-قصص-الأنبياء-ح-3.mp3?_=3",
+		"qsa": "خلق حواء من ضلع آدم وشجرة الخلد",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 23,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-آدم-عليه-السلام-3-قصص-الأنبياء-ح-4.mp3?_=4",
+		"qsa": "ابناء آدم عليه السلام وقتل قابيل لهابيل",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 24,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/سيدنا-إدريس-ونوح-عليهما-السلام-قصص-الأنبياء-ح-5.mp3?_=5",
+		"qsa": "قصة إدريس ونوح عليهما السلام",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 25,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-نوح-عليه-السلام-قصص-الأنبياء-ح-6.mp3?_=6",
+		"qsa": "سفينة نوح عليه السلام والطوفان العظيم",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 26,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-هود-عليه-السلام-قصص-الأنبياء-ح-7.mp3?_=7",
+		"qsa": "قصة هود عليه السلام وقوم عاد",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 27,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-صالح-عليه-السلام-1-قصص-الأنبياء-ح-9.mp3?_=8",
+		"qsa": "قوم صالح عليه السلام ومعجزة الناقة",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 28,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-صالح-عليه-السلام-2-قصص-الأنبياء-ح-10.mp3?_=9",
+		"qsa": "عذاب الله تعالى لقوم ثمود",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 29,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-ابراهيم-عليه-السلام-قصص-الأنبياء-ح-11.mp3?_=10",
+		"qsa": "تحطيم ابراهيم عليه للاصنام وحرقه في النار",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 30,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-ابراهيم-عليه-السلام-2-قصص-الأنبياء-ح-12.mp3?_=11",
+		"qsa": "ذبح ابراهيم لاسماعيل عليهما السلام",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 31,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-ابراهيم-عليه-السلام-3-قصص-الأنبياء-ح-13.mp3?_=12",
+		"qsa": "بناء ابراهيم عليه السلام للكعبة",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 32,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-لوط-عليه-السلام-قصص-الأنبياء-ح-14.mp3?_=13",
+		"qsa": "دعوة لوط عليه السلام لقومه",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 33,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-لوط-عليه-السلام-2-قصص-الأنبياء-ح-15.mp3?_=14",
+		"qsa": "عذاب الله تعالى لقوم لوط",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 34,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-يوسف-عليه-السلام-قصص-الأنبياء-ح-16.mp3?_=15",
+		"qsa": "القاء يوسف عليه السلام في الجب‎",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 35,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-يوسف-عليه-السلام-2-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=16",
+		"qsa": "سجن يوسف عليه السلام",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 36,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-يوسف-عليه-السلام-3-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=17",
+		"qsa": "لقاء يوسف عليه السلام باخوته",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 37,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-يوسف-عليه-السلام-4-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=18",
+		"qsa": "تحقق رؤيا يوسف عليه السلام",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 38,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-أيوب-عليه-السلام-قصص-الأنبياء-د.-طارق-السويدان-1.mp3?_=19",
+		"qsa": "ابتلاء الله تعالى لأيوب عليه السلام",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 39,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-أيوب-عليه-السلام-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=20",
+		"qsa": "يونس عليه السلام في بطن الحوت",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 40,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-شعيب-عليه-السلام-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=21",
+		"qsa": "شعيب عليه السلام وأصحاب الايكة",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 41,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-موسى-عليه-السلام-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=22",
+		"qsa": "القاء موسى عليه السلام في اليم",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 42,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-موسى-عليه-السلام-2-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=23",
+		"qsa": "خروج موسى عليه السلام من مصر الى مدين",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 43,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-موسى-عليه-السلام-3-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=24",
+		"qsa": "دعوة موسى وهارون عليهما السلام لفرعون",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 44,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-موسى-عليه-السلام-4-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=25",
+		"qsa": "نجاة موسى وبني اسرائيل وغرق فرعون وجنوده",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 45,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-موسى-عليه-السلام-5-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=26",
+		"qsa": "ذهاب موسى لميقات ربه وعبادة بني اسرائيل للعجل",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 46,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-طالوت-عليه-السلام-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=27",
+		"qsa": "قصة سيدنا داود عليه السلام مع طالوت وجالوت",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 47,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-سليمان-عليه-السلام-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=28",
+		"qsa": "سليمان عليه السلام وملكة سبأ",
+		"count": "30",
+		"letter": ""
+	},
+	{
+		"id": 48,
+		"name": "طارق السويدان",
+		"server": "https://suwaidan.com/wp-content/uploads/2021/06/قصة-سيدنا-زكريا-عليه-السلام-قصص-الأنبياء-د.-طارق-السويدان.mp3?_=29",
+		"qsa": "زكريا وابنه يحيى عليهما السلام",
+		"count": "30",
+		"letter": ""
+	}
+]

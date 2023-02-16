@@ -1,0 +1,12 @@
+{
+    "interaction_create_cooldown_warn": "Refroidir. vous pouvez essayer après {{time}}",
+    "player_move_stoped": "{{emoji}} | Le Audio a été arrêté et la file d'attente supprimée {{channel}}",
+    "track_start_default_embed": "{{emoji}} | {{title}} \n Par {{requester}}",
+    "track_start_not_in_voice": "Veuillez d'abord rejoindre un canal vocal {{channel}}",
+    "track_start_limited_volume": "{{play_emoji}} | {{title}} \n{{warn_emoji}} | Le volume doit être dans la plage `10 - 150`",
+    "track_start_volume_now": "{{play_emoji}} | {{title}} \n{{volume_emoji}} | Le niveau de volume actuel est de {{volume}}",
+    "track_start_stoped": "{{emoji}} | Le Audio a été arrêté. {{title}}",
+    "track_start_paused": "{{emoji}} | Le Audio a été mis en pause",
+    "track_start_resumed": "{{emoji}} | Le Audio a été repris",
+    "track_start_skipped": "{{emoji}} | Ignoré {{title}}"
+}

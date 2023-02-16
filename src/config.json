@@ -1,0 +1,146 @@
+{
+	"settings": {
+		"nodes": [
+			{
+				"identifier": "MindServer",
+				"host": "lava1.horizxon.studio",
+				"port": 80,
+				"password": "horizxon.studio",
+				"secure": false
+			}
+		],
+		"BOT_TOKEN": "",
+		"TEST_BOT_TOKEN": "",
+		"Mongo_DB": "",
+		"Prefix": "/",
+		"Basic_Lang": "AR",
+		"Status": "DND",
+		"Type": "PLAYING",
+		"Activity": "/help",
+		"Owner_ID": [],
+		"Basis_permissions": [
+			"MANAGE_GUILD",
+			"MANAGE_MESSAGES",
+			"MANAGE_WEBHOOKS",
+			"SEND_MESSAGES",
+			"VIEW_CHANNEL",
+			"PRIORITY_SPEAKER",
+			"CONNECT",
+			"SPEAK",
+			"MUTE_MEMBERS",
+			"DEAFEN_MEMBERS",
+			"MOVE_MEMBERS",
+			"EMBED_LINKS",
+			"ATTACH_FILES",
+			"READ_MESSAGE_HISTORY"
+		]
+	},
+	"colors": {
+		"Primary": "9bda4d",
+		"Warn": "ecad2d",
+		"Error": "f91c37",
+		"Dev": "0389fb"
+	},
+	"Links": {
+		"server": "https://discord.gg/3rZjSyS",
+		"invite": "https://discord.com/api/oauth2/authorize?client_id=<BOTID>&permissions=138042273056&scope=bot%20applications.commands",
+		"website": ""
+	},
+	"emojis": {
+		"error": "<:error:818207506530697236>",
+		"True": "<:cool:818211436424855572>",
+		"warn": "<:warn:818211442867306546>",
+		"info": "<:info:818211440069574716>",
+		"menu": "<:menu:818211363113402408>",
+		"tips": "<:tips:818216712243118130>",
+		"chevron": "<:chevron:818255260802875486>",
+		"data": "<:data:818267628812238858>",
+		"hashtag": "<:Hachtag:818418955471028254>",
+		"dev": "<:dev:818420335065038858>",
+		"off": "<:off:818221212261679174>",
+		"on": "<:on:818221224655847475>",
+		"wave": "<:wave:820012984935383090>",
+		"points": "<:points:827703709563748362>",
+		"settings_id": {
+			"error": "818207506530697236",
+			"True": "818211436424855572",
+			"warn": "818211442867306546",
+			"info": "818211440069574716",
+			"menu": "818211363113402408",
+			"tips": "818216712243118130",
+			"chevron": "818255260802875486",
+			"data": "818267628812238858",
+			"hashtag": "818418955471028254",
+			"dev": "818420335065038858",
+			"wave": "820012984935383090"
+		},
+		"audio": {
+			"backward": "<:backward:818215091584368650>",
+			"forward": "<:forward:818215094089023498>",
+			"pause": "<:pauseresume:818215095787061360>",
+			"play": "<:play:818216718346223636>",
+			"stop": "<:stop:818219872391397396>",
+			"skip": "<:skip:818215099247362098> ",
+			"loop": "<:loop:818216721788698674>",
+			"off": "<:off:818221212261679174>",
+			"on": "<:on:818221224655847475>",
+			"vol_up": "<:vol_up:818283453433774090>",
+			"vol_down": "<:vol_down:818283447780114442>",
+			"clear": "<:Delete:818285019944583218>",
+			"Shufel": "<:Shufel:826014148127096852>"
+		},
+		"audio_id": {
+			"backward": "818215091584368650",
+			"forward": "818215094089023498",
+			"pause": "818215095787061360",
+			"play": "818216718346223636",
+			"stop": "818219872391397396",
+			"skip": "818215099247362098",
+			"loop": "818216721788698674",
+			"off": "818221212261679174",
+			"on": "818221224655847475",
+			"vol_up": "818283453433774090",
+			"vol_down": "818283447780114442",
+			"clear": "818285019944583218",
+			"Shufel": "826014148127096852"
+		},
+		"num": {
+			"zero": "<:0_:827693326924382208>",
+			"one": "<:1_:818211466862788608>",
+			"tow": "<:2_:818211478275358750>",
+			"three": "<:3_:818211496672493578>",
+			"four": "<:4_:818211508788920380>",
+			"five": "<:5_:818211555258269706>",
+			"six": "<:6_:818211557640503346>",
+			"seven": "<:7_:818211600661217280>",
+			"eight": "<:8_:818211602889179227>",
+			"nine": "<:9_:818211589375262771>",
+			"ten": "<:10:818211598845476864>"
+		},
+		"num_id": {
+			"zero": "827693326924382208",
+			"one": "818211466862788608",
+			"tow": "818211478275358750",
+			"three": "818211496672493578",
+			"four": "818211508788920380",
+			"five": "818211555258269706",
+			"six": "818211557640503346",
+			"seven": "818211600661217280",
+			"eight": "818211602889179227",
+			"nine": "818211589375262771",
+			"ten": "818211598845476864"
+		}
+	},
+	"Webhooks": {
+		"catch": "https://discord.com/api/webhooks/1075847093056438332/PTxJUCOxrqd7pIr6iEl6pmWyNxxGyLnkaE0gVhzC8yzgYaLhjkFHhJfpbjmOoY82laqV",
+		"console_log": "https://discord.com/api/webhooks/1075847093056438332/PTxJUCOxrqd7pIr6iEl6pmWyNxxGyLnkaE0gVhzC8yzgYaLhjkFHhJfpbjmOoY82laqV",
+		"use_commands": "https://discord.com/api/webhooks/1075847093056438332/PTxJUCOxrqd7pIr6iEl6pmWyNxxGyLnkaE0gVhzC8yzgYaLhjkFHhJfpbjmOoY82laqV",
+		"server_join": "https://discord.com/api/webhooks/1075847093056438332/PTxJUCOxrqd7pIr6iEl6pmWyNxxGyLnkaE0gVhzC8yzgYaLhjkFHhJfpbjmOoY82laqV",
+		"server_leave": "https://discord.com/api/webhooks/1075847093056438332/PTxJUCOxrqd7pIr6iEl6pmWyNxxGyLnkaE0gVhzC8yzgYaLhjkFHhJfpbjmOoY82laqV",
+		"shardDisconnect": "https://discord.com/api/webhooks/1075847093056438332/PTxJUCOxrqd7pIr6iEl6pmWyNxxGyLnkaE0gVhzC8yzgYaLhjkFHhJfpbjmOoY82laqV",
+		"shardError": "https://discord.com/api/webhooks/1075847093056438332/PTxJUCOxrqd7pIr6iEl6pmWyNxxGyLnkaE0gVhzC8yzgYaLhjkFHhJfpbjmOoY82laqV",
+		"shardReady": "https://discord.com/api/webhooks/1075847093056438332/PTxJUCOxrqd7pIr6iEl6pmWyNxxGyLnkaE0gVhzC8yzgYaLhjkFHhJfpbjmOoY82laqV",
+		"shardReconnecting": "https://discord.com/api/webhooks/1075847093056438332/PTxJUCOxrqd7pIr6iEl6pmWyNxxGyLnkaE0gVhzC8yzgYaLhjkFHhJfpbjmOoY82laqV",
+		"shardResume": "https://discord.com/api/webhooks/1075847093056438332/PTxJUCOxrqd7pIr6iEl6pmWyNxxGyLnkaE0gVhzC8yzgYaLhjkFHhJfpbjmOoY82laqV"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"guild_only": "You cannot run this chat input command in DMs",
+	"has_current": "You must have a queue to use this command",
+	"has_perm": "I am missing the following permissions to run this command: {{missing}}",
+	"has_player": "You must have a queue to use this command",
+	"has_recovery": "Your guild is in recovery mode",
+	"in_voice": "Please join a voice channel first",
+	"owner_only": "This command can only be used by the owner.",
+	"same_voice": "Can't play here. You should be in this voice channel",
+	"has_perm_user": "You are missing the following permissions to run this command: {{missing}}"
+}

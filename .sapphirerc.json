@@ -1,0 +1,14 @@
+{
+  "projectLanguage": "js",
+  "locations": {
+    "base": "src",
+    "arguments": "arguments",
+    "commands": "commands",
+    "listeners": "listeners",
+    "preconditions": "preconditions"
+  },
+  "customFileTemplates": {
+    "enabled": false,
+    "location": ""
+  }
+}

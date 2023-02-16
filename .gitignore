@@ -1,0 +1,5 @@
+node_modules
+.git
+test
+.vscode
+.config.s.json

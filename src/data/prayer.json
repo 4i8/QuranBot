@@ -1,0 +1,120 @@
+{
+	"key": "d25f11621314910497c0c27c62c955a0",
+	"countries": [
+		{
+			"timezone": "Asia/Riyadh",
+			"country": "Riyadh",
+			"name": "المملكة العربية السعودية (الرياض)"
+		},
+		{
+			"timezone": "Asia/Riyadh",
+			"country": "Makkah",
+			"name": "المملكة العربية السعودية (مكة المكرمة)"
+		},
+		{
+			"timezone": "Africa/Cairo",
+			"country": "Cairo",
+			"name": "مصر (القاهرة)"
+		},
+		{
+			"timezone": "Asia/Damascus",
+			"country": "Damascus",
+			"name": "سوريا (دمشق)"
+		},
+		{
+			"timezone": "Asia/Baghdad",
+			"country": "Baghdad",
+			"name": "العراق (بغداد)"
+		},
+		{
+			"timezone": "Asia/Jerusalem",
+			"country": "Jerusalem",
+			"name": "فلسطين (القدس)"
+		},
+		{
+			"timezone": "Asia/Amman",
+			"country": "Amman",
+			"name": "الأردن (عمان)"
+		},
+		{
+			"timezone": "Asia/Kuwait",
+			"country": "Kuwait",
+			"name": "الكويت (الكويت)"
+		},
+		{
+			"timezone": "Asia/Beirut",
+			"country": "Beirut",
+			"name": "لبنان (بيروت)"
+		},
+		{
+			"timezone": "Africa/Tripoli",
+			"country": "Tripoli",
+			"name": "ليبيا (طرابلس)"
+		},
+		{
+			"timezone": "Africa/Casablanca",
+			"country": "Casablanca",
+			"name": "المغرب (الدار البيضاء)"
+		},
+		{
+			"timezone": "Africa/Tunis",
+			"country": "Tunis",
+			"name": "تونس (تونس)"
+		},
+		{
+			"timezone": "Asia/Dubai",
+			"country": "Dubai",
+			"name": "الإمارات العربية المتحدة (دبي)"
+		},
+		{
+			"timezone": "Asia/Bahrain",
+			"country": "Bahrain",
+			"name": "البحرين (المنامة)"
+		},
+		{
+			"timezone": "Asia/Qatar",
+			"country": "Qatar",
+			"name": "قطر (دوحة)"
+		},
+		{
+			"timezone": "Asia/Aden",
+			"country": "Aden",
+			"name": "اليمن (عدن)"
+		},
+		{
+			"timezone": "Africa/Mogadishu",
+			"country": "Mogadishu",
+			"name": "الصومال (مقديشو)"
+		},
+		{
+			"timezone": "Africa/Khartoum",
+			"country": "Khartoum",
+			"name": "السودان (الخرطوم)"
+		},
+		{
+			"timezone": "Asia/Muscat",
+			"country": "Muscat",
+			"name": "سلطنة عمان (مسقط)"
+		},
+		{
+			"timezone": "Indian/Comoro",
+			"country": "Moroni",
+			"name": "جزر القمر (موروني)"
+		},
+		{
+			"timezone": "Africa/Nouakchott",
+			"country": "Nouakchott",
+			"name": "موريتانيا (نواكشوط)"
+		},
+		{
+			"timezone": "Africa/Algiers",
+			"country": "Algiers",
+			"name": "الجزائر (الجزائر)"
+		},
+		{
+			"timezone": "Africa/Djibouti",
+			"country": "Djibouti",
+			"name": "جيبوتي (جيبوتي)"
+		}
+	]
+}

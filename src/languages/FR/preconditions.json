@@ -1,0 +1,11 @@
+{
+	"guild_only": "Vous ne pouvez pas exécuter cette commande dans les DM",
+	"has_current": "Vous devez avoir une file d'attente pour utiliser cette commande",
+	"has_perm": "Il me manque les autorisations suivantes pour exécuter cette commande : {{missing}}",
+	"has_player": "Vous devez avoir une file d'attente pour utiliser cette commande",
+	"has_recovery": "Votre guilde est en mode récupération",
+	"in_voice": "Veuillez d'abord rejoindre un canal vocal",
+	"owner_only": "Cette commande ne peut être utilisée que par le propriétaire.",
+	"same_voice": "Je ne peux pas jouer ici. Vous devriez être dans ce canal vocal",
+	"has_perm_user": "Il me manque les autorisations suivantes pour exécuter cette commande : {{missing}}"
+}

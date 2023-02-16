@@ -1,0 +1,1074 @@
+[
+	{
+		"id": "1",
+		"name": "أحمد الحواشي",
+		"server": "https://server11.mp3quran.net/hawashi",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "أ"
+	},
+	{
+		"id": "2",
+		"name": "أحمد السويلم",
+		"server": "https://server14.mp3quran.net/swlim/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "أ"
+	},
+	{
+		"id": "3",
+		"name": "أحمد الطرابلسي",
+		"server": "https://server10.mp3quran.net/trabulsi",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "أ"
+	},
+	{
+		"id": "4",
+		"name": "أحمد بن علي العجمي",
+		"server": "https://server10.mp3quran.net/ajm/128",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "أ"
+	},
+	{
+		"id": "5",
+		"name": "أحمد خضر الطرابلسي",
+		"server": "https://server10.mp3quran.net/trablsi",
+		"rewaya": "قالون عن نافع",
+		"count": "114",
+		"letter": "أ"
+	},
+	{
+		"id": "6",
+		"name": "أحمد ديبان",
+		"server": "https://server16.mp3quran.net/deban/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "أ"
+	},
+	{
+		"id": "7",
+		"name": "أحمد ديبان",
+		"server": "https://server16.mp3quran.net/deban/Rewayat-Sho-bah-A-n-Asim",
+		"rewaya": "شعبة عن عاصم",
+		"count": "114",
+		"letter": "أ"
+	},
+	{
+		"id": "8",
+		"name": "يوسف بن نوح أحمد",
+		"server": "https://server8.mp3quran.net/noah",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ي"
+	},
+	{
+		"id": "9",
+		"name": "أحمد عامر",
+		"server": "https://server10.mp3quran.net/Aamer",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "أ"
+	},
+	{
+		"id": "10",
+		"name": "أحمد نعينع",
+		"server": "https://server11.mp3quran.net/ahmad_nu",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "أ"
+	},
+	{
+		"id": "11",
+		"name": "أكرم العلاقمي",
+		"server": "https://server9.mp3quran.net/akrm",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "أ"
+	},
+	{
+		"id": "12",
+		"name": "إبراهيم الأخضر",
+		"server": "https://server6.mp3quran.net/akdr",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "إ"
+	},
+	{
+		"id": "13",
+		"name": "ابراهيم الجرمي",
+		"server": "https://server11.mp3quran.net/jormy/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ا"
+	},
+	{
+		"id": "14",
+		"name": "ابراهيم الدوسري",
+		"server": "https://server10.mp3quran.net/ibrahim_dosri_hafs",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ا"
+	},
+	{
+		"id": "15",
+		"name": "ابراهيم الدوسري",
+		"server": "https://server10.mp3quran.net/ibrahim_dosri_warsh",
+		"rewaya": "ورش عن نافع",
+		"count": "114",
+		"letter": "ا"
+	},
+	{
+		"id": "16",
+		"name": "الدوكالي محمد العالم",
+		"server": "https://server7.mp3quran.net/dokali",
+		"rewaya": "قالون عن نافع",
+		"count": "114",
+		"letter": "ا"
+	},
+	{
+		"id": "17",
+		"name": "الزين محمد أحمد",
+		"server": "https://server9.mp3quran.net/alzain",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ا"
+	},
+	{
+		"id": "18",
+		"name": "العيون الكوشي",
+		"server": "https://server11.mp3quran.net/koshi",
+		"rewaya": "ورش عن نافع",
+		"count": "114",
+		"letter": "ا"
+	},
+	{
+		"id": "19",
+		"name": "الفاتح محمد الزبير",
+		"server": "https://server6.mp3quran.net/fateh",
+		"rewaya": "الدوري عن أبي عمرو",
+		"count": "114",
+		"letter": "ا"
+	},
+	{
+		"id": "20",
+		"name": "ياسين الجزائري",
+		"server": "https://server11.mp3quran.net/qari",
+		"rewaya": "ورش عن نافع",
+		"count": "114",
+		"letter": "ا"
+	},
+	{
+		"id": "21",
+		"name": "بندر بليله",
+		"server": "https://server6.mp3quran.net/balilah",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ب"
+	},
+	{
+		"id": "22",
+		"name": "توفيق الصايغ",
+		"server": "https://server6.mp3quran.net/twfeeq",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ت"
+	},
+	{
+		"id": "23",
+		"name": "جمال شاكر عبدالله",
+		"server": "https://server6.mp3quran.net/jamal",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ج"
+	},
+	{
+		"id": "24",
+		"name": "جمعان العصيمي",
+		"server": "https://server6.mp3quran.net/jaman",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ج"
+	},
+	{
+		"id": "25",
+		"name": "حاتم فريد الواعر",
+		"server": "https://server11.mp3quran.net/hatem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ح"
+	},
+	{
+		"id": "26",
+		"name": "خالد الجليل",
+		"server": "https://server10.mp3quran.net/jleel",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "خ"
+	},
+	{
+		"id": "27",
+		"name": "خالد القحطاني",
+		"server": "https://server10.mp3quran.net/qht",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "خ"
+	},
+	{
+		"id": "28",
+		"name": "خالد المهنا",
+		"server": "https://server11.mp3quran.net/mohna",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "خ"
+	},
+	{
+		"id": "29",
+		"name": "خالد عبدالكافي",
+		"server": "https://server11.mp3quran.net/kafi",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "خ"
+	},
+	{
+		"id": "30",
+		"name": "خليفة الطنيجي",
+		"server": "https://server12.mp3quran.net/tnjy",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "خ"
+	},
+	{
+		"id": "31",
+		"name": "رامي الدعيس",
+		"server": "https://server6.mp3quran.net/rami",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ر"
+	},
+	{
+		"id": "32",
+		"name": "رشيد بلعالية",
+		"server": "https://server6.mp3quran.net/bl3/Rewayat-Warsh-A-n-Nafi",
+		"rewaya": "ورش عن نافع",
+		"count": "114",
+		"letter": "ر"
+	},
+	{
+		"id": "33",
+		"name": "زكي داغستاني",
+		"server": "https://server9.mp3quran.net/zaki",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ز"
+	},
+	{
+		"id": "34",
+		"name": "سعد الغامدي",
+		"server": "https://server7.mp3quran.net/s_gmd",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "س"
+	},
+	{
+		"id": "35",
+		"name": "سعد المقرن",
+		"server": "https://server16.mp3quran.net/saad/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "س"
+	},
+	{
+		"id": "36",
+		"name": "سعود الشريم",
+		"server": "https://server7.mp3quran.net/shur",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "س"
+	},
+	{
+		"id": "37",
+		"name": "سهل ياسين",
+		"server": "https://server6.mp3quran.net/shl",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "س"
+	},
+	{
+		"id": "38",
+		"name": "سيد رمضان",
+		"server": "https://server12.mp3quran.net/sayed",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "س"
+	},
+	{
+		"id": "39",
+		"name": "شيخ أبو بكر الشاطري",
+		"server": "https://server11.mp3quran.net/shatri",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ش"
+	},
+	{
+		"id": "40",
+		"name": "شيرزاد عبدالرحمن طاهر",
+		"server": "https://server12.mp3quran.net/taher",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ش"
+	},
+	{
+		"id": "41",
+		"name": "صابر عبدالحكم",
+		"server": "https://server12.mp3quran.net/hkm",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ص"
+	},
+	{
+		"id": "42",
+		"name": "صالح الهبدان",
+		"server": "https://server6.mp3quran.net/habdan/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ص"
+	},
+	{
+		"id": "43",
+		"name": "صلاح البدير",
+		"server": "https://server6.mp3quran.net/s_bud",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ص"
+	},
+	{
+		"id": "44",
+		"name": "صلاح الهاشم",
+		"server": "https://server12.mp3quran.net/salah_hashim_m",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ص"
+	},
+	{
+		"id": "45",
+		"name": "صلاح بو خاطر",
+		"server": "https://server8.mp3quran.net/bu_khtr",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ص"
+	},
+	{
+		"id": "46",
+		"name": "طارق عبدالغني دعوب",
+		"server": "https://server10.mp3quran.net/tareq",
+		"rewaya": "قالون عن نافع",
+		"count": "114",
+		"letter": "ط"
+	},
+	{
+		"id": "47",
+		"name": "عادل الكلباني",
+		"server": "https://server8.mp3quran.net/a_klb",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "48",
+		"name": "عادل ريان",
+		"server": "https://server8.mp3quran.net/ryan",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "49",
+		"name": "عبدالإله بن عون",
+		"server": "https://server16.mp3quran.net/a_binaoun/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "50",
+		"name": "عبدالبارئ الثبيتي",
+		"server": "https://server6.mp3quran.net/thubti",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "51",
+		"name": "عبدالبارئ محمد",
+		"server": "https://server12.mp3quran.net/bari",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "52",
+		"name": "ياسر سلامة",
+		"server": "https://server12.mp3quran.net/salamah/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ي"
+	},
+	{
+		"id": "53",
+		"name": "عبدالباسط عبدالصمد",
+		"server": "https://server10.mp3quran.net/basit_warsh",
+		"rewaya": "ورش عن نافع",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "54",
+		"name": "عبدالباسط عبدالصمد ",
+		"server": "https://server13.mp3quran.net/basit_mjwd",
+		"rewaya": "المصحف المجود",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "55",
+		"name": "عبدالرحمن السديس",
+		"server": "https://server11.mp3quran.net/sds",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "56",
+		"name": "عبدالرحمن العوسي",
+		"server": "https://server6.mp3quran.net/aloosi",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "57",
+		"name": "عبدالرحمن الماجد",
+		"server": "https://server10.mp3quran.net/a_majed",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "58",
+		"name": "عبدالرشيد صوفي",
+		"server": "https://server16.mp3quran.net/soufi-hfs/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "59",
+		"name": "عبدالرشيد صوفي",
+		"server": "https://server9.mp3quran.net/soufi",
+		"rewaya": "السوسي عن أبي عمرو",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "60",
+		"name": "عبدالرشيد صوفي",
+		"server": "https://server9.mp3quran.net/soufi_klf",
+		"rewaya": "خلف عن حمزة",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "61",
+		"name": "عبدالعزيز الأحمد",
+		"server": "https://server11.mp3quran.net/a_ahmed",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "62",
+		"name": "عبدالعزيز الزهراني",
+		"server": "https://server9.mp3quran.net/zahrani",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "63",
+		"name": "عبدالله الخلف",
+		"server": "https://server14.mp3quran.net/khalf",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "64",
+		"name": "عبدالله الكندري",
+		"server": "https://server10.mp3quran.net/Abdullahk",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "65",
+		"name": "عبدالله المطرود",
+		"server": "https://server8.mp3quran.net/mtrod",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "66",
+		"name": "عبدالله بصفر",
+		"server": "https://server6.mp3quran.net/bsfr",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "67",
+		"name": "عبدالله خياط",
+		"server": "https://server12.mp3quran.net/kyat",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "68",
+		"name": "عبدالله عواد الجهني",
+		"server": "https://server13.mp3quran.net/jhn",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "69",
+		"name": "عبدالله غيلان",
+		"server": "https://server8.mp3quran.net/gulan/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "70",
+		"name": "عبدالله كامل",
+		"server": "https://server16.mp3quran.net/kamel/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "71",
+		"name": "عبدالمحسن الحارثي",
+		"server": "https://server6.mp3quran.net/mohsin_harthi",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "72",
+		"name": "عبدالمحسن العبيكان",
+		"server": "https://server12.mp3quran.net/obk",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "73",
+		"name": "عبدالمحسن القاسم",
+		"server": "https://server8.mp3quran.net/qasm",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "74",
+		"name": "عبدالهادي أحمد كناكري",
+		"server": "https://server6.mp3quran.net/kanakeri",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "75",
+		"name": "عبدالودود حنيف",
+		"server": "https://server8.mp3quran.net/wdod",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "76",
+		"name": "علي الحذيفي",
+		"server": "https://server9.mp3quran.net/huthifi_qalon",
+		"rewaya": "قالون عن نافع",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "77",
+		"name": "علي الحذيفي",
+		"server": "https://server9.mp3quran.net/hthfi",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "78",
+		"name": "علي جابر",
+		"server": "https://server11.mp3quran.net/a_jbr",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "79",
+		"name": "علي حجاج السويسي",
+		"server": "https://server9.mp3quran.net/hajjaj",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "80",
+		"name": "عماد زهير حافظ",
+		"server": "https://server6.mp3quran.net/hafz",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "81",
+		"name": "عمر القزابري",
+		"server": "https://server9.mp3quran.net/omar_warsh",
+		"rewaya": "ورش عن نافع",
+		"count": "114",
+		"letter": "ع"
+	},
+	{
+		"id": "82",
+		"name": "فارس عباد",
+		"server": "https://server8.mp3quran.net/frs_a",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ف"
+	},
+	{
+		"id": "83",
+		"name": "ماجد الزامل",
+		"server": "https://server9.mp3quran.net/zaml",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "84",
+		"name": "ماهر المعيقلي",
+		"server": "https://server12.mp3quran.net/maher",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "85",
+		"name": "ماهر المعيقلي",
+		"server": "https://server12.mp3quran.net/maher/Almusshaf-Al-Mojawwad",
+		"rewaya": "المصحف المجود",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "86",
+		"name": "ماهر شخاشيرو",
+		"server": "https://server10.mp3quran.net/shaksh",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "87",
+		"name": "محمد أبو سنينة",
+		"server": "https://server16.mp3quran.net/sneineh/Rewayat-Qalon-A-n-Nafi",
+		"rewaya": "قالون عن نافع",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "88",
+		"name": "محمد أيوب",
+		"server": "https://server8.mp3quran.net/ayyub",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "89",
+		"name": "يحيى حوا",
+		"server": "https://server12.mp3quran.net/yahya",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ي"
+	},
+	{
+		"id": "90",
+		"name": "محمد الامين قنيوه",
+		"server": "https://server16.mp3quran.net/qeniwa/Rewayat-Qalon-A-n-Nafi",
+		"rewaya": "قالون عن نافع",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "91",
+		"name": "محمد الطبلاوي",
+		"server": "https://server12.mp3quran.net/tblawi",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "92",
+		"name": "محمد اللحيدان",
+		"server": "https://server8.mp3quran.net/lhdan",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "93",
+		"name": "محمد جبريل",
+		"server": "https://server8.mp3quran.net/jbrl",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "94",
+		"name": "محمد رشاد الشريف",
+		"server": "https://server10.mp3quran.net/rashad",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "95",
+		"name": "محمد سايد",
+		"server": "https://server16.mp3quran.net/m_sayed/Rewayat-Warsh-A-n-Nafi",
+		"rewaya": "ورش عن نافع",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "96",
+		"name": "محمد صالح عالم شاه",
+		"server": "https://server12.mp3quran.net/shah",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "97",
+		"name": "محمد صديق المنشاوي",
+		"server": "https://server11.mp3quran.net/minsh_mjwd",
+		"rewaya": "المصحف المجود",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "98",
+		"name": "محمد صديق المنشاوي",
+		"server": "https://server10.mp3quran.net/minsh",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "99",
+		"name": "محمد عبدالحكيم سعيد العبدالله",
+		"server": "https://server12.mp3quran.net/abdullah_dori",
+		"rewaya": "الدوري عن الكسائي",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "100",
+		"name": "محمد عبدالحكيم سعيد العبدالله",
+		"server": "https://server9.mp3quran.net/abdullah",
+		"rewaya": "البزي وقنبل عن ابن كثير",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "101",
+		"name": "محمد عبدالكريم",
+		"server": "https://server7.mp3quran.net/m_kreem_warsh",
+		"rewaya": "ورش عن نافع من طريق أبي بكر الأصبهاني",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "102",
+		"name": "محمد عبدالكريم",
+		"server": "https://server12.mp3quran.net/m_krm",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "103",
+		"name": "محمد عثمان خان ( من الهند )",
+		"server": "https://server6.mp3quran.net/khan",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "104",
+		"name": "محمود الرفاعي",
+		"server": "https://server11.mp3quran.net/mrifai",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "105",
+		"name": "محمود الشيمي",
+		"server": "https://server10.mp3quran.net/sheimy",
+		"rewaya": "الدوري عن الكسائي",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "106",
+		"name": "محمود خليل الحصري",
+		"server": "https://server13.mp3quran.net/husr/Rewayat-Qalon-A-n-Nafi",
+		"rewaya": "قالون عن نافع",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "107",
+		"name": "محمود خليل الحصري",
+		"server": "https://server13.mp3quran.net/husr/Rewayat-Aldori-A-n-Abi-Amr",
+		"rewaya": "الدوري عن أبي عمرو",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "108",
+		"name": "يوسف الشويعي",
+		"server": "https://server9.mp3quran.net/yousef",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ي"
+	},
+	{
+		"id": "109",
+		"name": "محمود خليل الحصري",
+		"server": "https://server9.mp3quran.net/husr_mjwd",
+		"rewaya": "المصحف المجود",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "110",
+		"name": "محمود خليل الحصري",
+		"server": "https://server13.mp3quran.net/husr",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "111",
+		"name": "محمود علي البنا",
+		"server": "https://server8.mp3quran.net/bna_mjwd",
+		"rewaya": "المصحف المجود",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "112",
+		"name": "محمود علي البنا",
+		"server": "https://server8.mp3quran.net/bna",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "113",
+		"name": "مشاري العفاسي",
+		"server": "https://server8.mp3quran.net/afs",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "114",
+		"name": "مصطفى إسماعيل",
+		"server": "https://server8.mp3quran.net/mustafa",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "115",
+		"name": "مصطفى اللاهوني",
+		"server": "https://server6.mp3quran.net/lahoni",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "116",
+		"name": "مصطفى رعد العزاوي",
+		"server": "https://server8.mp3quran.net/ra3ad",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "117",
+		"name": "معيض الحارثي",
+		"server": "https://server8.mp3quran.net/harthi",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "118",
+		"name": "مفتاح السلطني",
+		"server": "https://server11.mp3quran.net/muftah_thakwan",
+		"rewaya": "ابن ذكوان عن ابن عامر",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "119",
+		"name": "مفتاح السلطني",
+		"server": "https://server9.mp3quran.net/sultany",
+		"rewaya": "الدوري عن أبي عمرو",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "120",
+		"name": "مفتاح السلطني",
+		"server": "https://server10.mp3quran.net/muftah",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "121",
+		"name": "مفتاح السلطني",
+		"server": "https://server6.mp3quran.net/saltany_kisaia",
+		"rewaya": "الدوري عن الكسائي",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "122",
+		"name": "موسى بلال",
+		"server": "https://server11.mp3quran.net/bilal",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "م"
+	},
+	{
+		"id": "123",
+		"name": "ناصر القطامي",
+		"server": "https://server6.mp3quran.net/qtm",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ن"
+	},
+	{
+		"id": "124",
+		"name": "ناصر الماجد",
+		"server": "https://server14.mp3quran.net/nasser_almajed",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ن"
+	},
+	{
+		"id": "125",
+		"name": "نبيل الرفاعي",
+		"server": "https://server9.mp3quran.net/nabil",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ن"
+	},
+	{
+		"id": "126",
+		"name": "نذير المالكي",
+		"server": "https://server16.mp3quran.net/nathier/Rewayat-Hafs-A-n-Assem",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ن"
+	},
+	{
+		"id": "127",
+		"name": "نعمة الحسان",
+		"server": "https://server8.mp3quran.net/namh",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ن"
+	},
+	{
+		"id": "128",
+		"name": "نورين محمد صديق",
+		"server": "https://server16.mp3quran.net/nourin_siddig/Rewayat-Aldori-A-n-Abi-Amr",
+		"rewaya": "الدوري عن أبي عمرو",
+		"count": "114",
+		"letter": "ن"
+	},
+	{
+		"id": "129",
+		"name": "هاني الرفاعي",
+		"server": "https://server8.mp3quran.net/hani",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ه"
+	},
+	{
+		"id": "130",
+		"name": "وديع اليمني",
+		"server": "https://server6.mp3quran.net/wdee3",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "و"
+	},
+	{
+		"id": "131",
+		"name": "وليد النائحي",
+		"server": "https://server9.mp3quran.net/waleed",
+		"rewaya": "قالون عن نافع من طريق أبي نشيط",
+		"count": "114",
+		"letter": "و"
+	},
+	{
+		"id": "132",
+		"name": "ياسر الدوسري",
+		"server": "https://server11.mp3quran.net/yasser",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ي"
+	},
+	{
+		"id": "133",
+		"name": "ياسر القرشي",
+		"server": "https://server9.mp3quran.net/qurashi",
+		"rewaya": "حفص عن عاصم",
+		"count": "114",
+		"letter": "ي"
+	},
+	{
+		"id": "134",
+		"name": "ياسر المزروعي ",
+		"server": "https://server9.mp3quran.net/mzroyee",
+		"rewaya": "قراءة يعقوب الحضرمي بروايتي رويس وروح",
+		"count": "114",
+		"letter": "ي"
+	}
+]
