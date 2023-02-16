@@ -48,7 +48,7 @@
 	},
 	"scripts": {
 		"watch": "nodemon -L --watch src",
-		"start": "node ./src/shard.js",
+		"start": "node ./src/shard.js & node ./extensions/prayer.js",
 		"format": "prettier --write \"src/**/*.js\"",
 		"test": "nodemon ./src/index.js --test",
 		"win": "forever start ./src/shard.js & forever start ./extensions/prayer.js",
