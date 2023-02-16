@@ -1,11 +1,11 @@
 <div align="center">
   <p>
- <a href="https://discord.com/api/oauth2/authorize?client_id=692060368780001300&permissions=138042273056&scope=bot%20applications.commands"><img  src="https://cdn.discordapp.com/icons/694418750807736330/d6cce554798fdcd441d6b3e487ba116e.webp?size=4096" width="300" alt="qmy" /></a>
+ <a href="https://discord.com/api/oauth2/authorize?client_id=692060368780001300&permissions=138042273056&scope=bot%20applications.commands"><img  src="https://cdn.discordapp.com/icons/694418750807736330/d6cce554798fdcd441d6b3e487ba116e.webp?size=4096" width="300" alt="Quran" /></a>
   </p>
   </div>
 
   <p align="center">
-  <a href="https://discord.com/api/oauth2/authorize?client_id=692060368780001300&permissions=138042273056&scope=bot%20applications.commands"><img src="https://img.shields.io/static/v1?label=Invite%20Me&message=Quran-قرآن&plastic&color=5865F2&logo=discord&style=for-the-badge"></a>
+  <a href="https://discord.com/api/oauth2/authorize?client_id=692060368780001300&permissions=138042273056&scope=bot%20applications.commands"><img src="https://img.shields.io/static/v1?label=Invite%20Me&message=Add Bot&plastic&color=5865F2&logo=discord&style=for-the-badge"></a>
    <a href="https://discord.gg/3rZjSyS"><img src="https://img.shields.io/discord/694418750807736330?https://img.shields.io/static/v1?text=f&style=for-the-badge&logo=discord&logoColor=fff" alt="Discord server" /></a>
     <a href="LICENSE">
         <img src="https://img.shields.io/github/license/4i8/quranbot?label=License&style=for-the-badge">
