@@ -59,7 +59,7 @@ mongoose
 								console.log(err);
 								hook(err.toString()).error();
 							})
-					: FindCountry.prayer[0].date !== BasisDate
+					: FindCountry.prayer[0]?.date !== BasisDate
 					? await fetch(`https://api.aladhan.com/v1/timingsByAddress?address=${country}`)
 							.then((res) => res.json())
 							.then((json) =>
