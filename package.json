@@ -41,20 +41,17 @@
 	},
 	"devDependencies": {
 		"@sapphire/prettier-config": "^1.4.3",
+		"concurrently": "^7.6.0",
 		"forever": "^4.0.3",
 		"nodemon": "^2.0.19",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.7.1"
 	},
 	"scripts": {
-		"watch": "nodemon -L --watch src",
-		"start": "node ./src/shard.js & node ./extensions/prayer.js",
+		"watch": "concurrently \"nodemon -L --watch src\" \"nodemon ./extensions/prayer.js\"",
+		"start": "concurrently \"node ./src/shard.js\" \"node ./extensions/prayer.js\"",
 		"format": "prettier --write \"src/**/*.js\"",
-		"test": "nodemon ./src/index.js --test",
-		"win": "forever start ./src/shard.js & forever start ./extensions/prayer.js",
-		"linux": "forever start ./src/shard.js | forever start ./extensions/prayer.js",
-		"restart": "forever restartall",
-		"stop": "forever stopall"
+		"test": "nodemon ./src/index.js --test"
 	},
 	"prettier": "@sapphire/prettier-config",
 	"repository": {
