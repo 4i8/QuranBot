@@ -9,6 +9,8 @@ const prayer = require('../src/data/prayer.json');
 const fetch = require('node-fetch').default;
 const moment = require('moment-timezone');
 const Conveyor = require('tacs');
+const chalk = require('chalk');
+const wait = (ms) => new Promise((resolve) => setTimeout(() => resolve(true), ms));
 mongoose
 	.connect(settings.Mongo_DB, {
 		dbName: 'quran',
@@ -24,9 +26,11 @@ mongoose
 		};
 		console.log('Connect To MongoDB Successfully');
 		console.log('Prayer Started Successfully');
-		prayer.countries.forEach(async ({ timezone, country }) => {
+		for (let index = 0; index < prayer.countries.length; index++) {
+			const { timezone, country } = prayer.countries[index];
 			process.prayerCache.tacs[country] = new Conveyor();
 			let tacs = process.prayerCache.tacs[country];
+			console.log(`${chalk.blue('[COUNTRY]')} [${chalk.green(country)}]:${chalk.yellow(timezone)}`);
 			setInterval(async () => {
 				// console.log('Prayer Started For ' + country);
 				if (process.prayerCache.countries[country] === true) return;
@@ -39,8 +43,9 @@ mongoose
 				const DataPrayer = !FindCountry
 					? await fetch(`https://api.aladhan.com/v1/timingsByAddress?address=${country}`)
 							.then((res) => res.json())
-							.then((json) =>
-								Object.assign(
+							.then((json) => {
+								if (json?.message === 'API rate limit exceeded') return false;
+								return Object.assign(
 									{ date: json.data.date.gregorian.date },
 									Object.assign(
 										Object.keys(json.data.timings)
@@ -53,8 +58,8 @@ mongoose
 												};
 											})
 									).reduce((a, b) => Object.assign(a, b), {})
-								)
-							)
+								);
+							})
 							.catch((err) => {
 								console.log(err);
 								hook(err.toString()).error();
@@ -62,8 +67,9 @@ mongoose
 					: FindCountry.prayer[0]?.date !== BasisDate
 					? await fetch(`https://api.aladhan.com/v1/timingsByAddress?address=${country}`)
 							.then((res) => res.json())
-							.then((json) =>
-								Object.assign(
+							.then((json) => {
+								if (json?.message === 'API rate limit exceeded') return false;
+								return Object.assign(
 									{ date: json.data.date.gregorian.date },
 									Object.assign(
 										Object.keys(json.data.timings)
@@ -76,16 +82,17 @@ mongoose
 												};
 											})
 									).reduce((a, b) => Object.assign(a, b), {})
-								)
-							)
+								);
+							})
 							.catch((err) => {
 								console.log(err);
 								hook(err.toString()).error();
 							})
 					: FindCountry;
+				if (!DataPrayer) return;
 				process.prayerCache.countries[country] = false;
 				if (!FindCountry) {
-					console.log(`[Prayer] ${country} is not found in database`);
+					console.log(`${chalk.blue("[PRAYER]")} ${chalk.yellow(`${country} is not found in database`)}`);
 					const newPrayer = new prayerSchema({
 						country: country,
 						prayer: DataPrayer
@@ -94,8 +101,8 @@ mongoose
 					return;
 				} else {
 					// console.log('Prayer is already');
-					if (FindCountry.prayer[0].date !== BasisDate) {
-						console.log(`[Prayer] Data for ${country} is not updated`);
+					if (FindCountry && FindCountry.prayer[0]?.date !== BasisDate) {
+						console.log(`${chalk.blue("[PRAYER]")} ${chalk.yellow(`Data for ${country} is not updated`)}`);
 						await prayerSchema.findOneAndUpdate(
 							{ country: country },
 							{
@@ -132,7 +139,7 @@ mongoose
 				}
 				process.prayerCache.list.push(secret);
 				tacs.get({ secret: secret }).remove();
-				console.log(`[Prayer] ${key} is started in ${country}`);
+				console.log(`${chalk.blue("[PRAYER]")} ${chalk.yellow(`${key} is started in ${country}`)}`);
 				await prayerSchema.findOneAndUpdate(
 					{ country: country },
 					{
@@ -188,7 +195,8 @@ mongoose
 				});
 				tacs.next().catch(() => {});
 			});
-		});
+			await wait(6000);
+		}
 	})
 	.catch(() => {
 		throw new Error('Connect To MongoDB Failed');
