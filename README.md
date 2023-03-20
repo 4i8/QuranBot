@@ -42,6 +42,8 @@
 	```bash
 		npm install
 	```
+#### **Rename `src/config.example.json` to `src/config.json`**
+
 3. Add your Tokens to  `src/config.json`
 	```json
 	{
