@@ -11,7 +11,7 @@ class NodeErrorEvent extends Listener {
 	}
 
 	run(node, error) {
-		if (i++ == 0) return;
+		if (i++ < 5) return;
 		this.container.logger.error(`NodeError[${node.options.identifier}]>>${error.message}`);
 		hook(`NodeError[${node.options.identifier}]>>${error.message}`).error();
 		this.container.logger.error(error);
