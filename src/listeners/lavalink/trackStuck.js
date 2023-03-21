@@ -20,7 +20,7 @@ class TrackStuckEvent extends Listener {
         this.container.logger.error(`Stuck[${player.guild}]`);
 		hook(`Stuck[${player.guild}]`).error();
         if (!player.voiceChannel) player.destroy();
-    };
+    }
 }
 
 exports.TrackStuckEvent = TrackStuckEvent;

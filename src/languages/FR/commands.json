@@ -31,7 +31,8 @@
 	"time_minutes": "Le temps devrait être au moins cinq minutes.",
 	"webhookerror_30007": "Je ne peux pas créer de crochet Web en raison de la limite supérieure du canal.",
 	"webhookerror": "Un problème s'est produit, veuillez consulter le support technique",
-	"help": "Pour afficher les commandes, utilisez:`/`\n, alors choisissez le bot dans la liste et les commandes apparaîtront pour vous.",
+	"help": "Commandes:",
 	"loop_remember": "Voulez-vous faire le Audio 24h/24 et 7j/7 dans le canal audio ?\nNotez que cette question ne sera plus posée et que vous pouvez activer ce paramètre à tout moment via la commande\n`/loop`",
-	"alert_voice": "Alerte:\n le message de contrôle du Audio sera envoyé dans le chat intégré au canal audio"
+	"alert_voice": "Alerte:\n le message de contrôle du Audio sera envoyé dans le chat intégré au canal audio",
+	"play_limit": "You have reached the limit of `114` Quran in the queue, please wait for the queue to be completed or use the command `/stop` to clear the queue."
 }

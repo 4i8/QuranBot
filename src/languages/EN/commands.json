@@ -31,7 +31,8 @@
 	"time_minutes": "The time should be at least five minutes.",
 	"webhookerror_30007": "I cannot create a web hook because of the upper limit on the channel.",
 	"webhookerror": "A problem has occurred, please review technical support",
-	"help": "To show commands, use:`/`\n, then choose the bot from the list and commands will appear for you.",
+	"help": "Commands:",
 	"loop_remember": "Do you want to make the Qur’an 24/7 in the audio channel?\nNote that this question will not be asked again and you can activate this setting at any time via the command\n`/loop`",
-	"alert_voice": "Alert:\nAudio control message will be sent in the chat built into the voicechannel"
+	"alert_voice": "Alert:\nAudio control message will be sent in the chat built into the voicechannel",
+	"play_limit": "You have reached the limit of `114` Quran in the queue, please wait for the queue to be completed or use the command `/stop` to clear the queue."
 }

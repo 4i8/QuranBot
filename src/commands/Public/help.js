@@ -32,6 +32,14 @@ class HelpCommand extends Command {
 	 */
 	async chatInputRun(interaction) {
 		const { client } = this.container;
+		const commands = client.application?.commands.cache.map((cmd) => {
+			return {
+				id: cmd.id,
+				name: cmd.name,
+				description: cmd.description,
+				options: cmd.options
+			};
+		});
 		await interaction.deferReply({
 			ephemeral: false
 		});
@@ -50,16 +58,36 @@ class HelpCommand extends Command {
 						style: 5,
 						label: 'دعوة/Invite',
 						url: client.config.Links.invite
+					},
+					{
+						type: 2,
+						style: 5,
+						label: 'المصدر/Source',
+						url: 'https://github.com/4i8/quranbot.git'
 					}
 				]
 			}
 		];
-		embed(interaction, await resolveKey(interaction, 'commands:help'), 'p-', {
-			interaction: {
-				stats: true
-			},
-			components: components
-		});
+		embed(
+			interaction,
+			(await resolveKey(interaction, 'commands:help')) +
+				`\n` +
+				commands
+					.map((cmd) => {
+						if (['help', 'hello'].includes(cmd.name)) return;
+						return `</${cmd.name}:${cmd.id}> - ${cmd.description}
+						`;
+					})
+					.filter((cmd) => cmd)
+					.join('\n'),
+			'p-',
+			{
+				interaction: {
+					stats: true
+				},
+				components: components
+			}
+		);
 	}
 }
 

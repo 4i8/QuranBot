@@ -27,8 +27,8 @@ class NodeConnectEvent extends Listener {
 			this.container.logger.info(`Node "${node.options.identifier}" connected.`);
 		}, 2000);
 		//
-		return; //Because there is no Lava Link server that can bear it, it has been disabled, hoping that your support will bring us a powerful server
-		if (process.istest) return;
+		//return; //Because there is no Lava Link server that can bear it, it has been disabled, hoping that your support will bring us a powerful server
+		// if (process.istest) return;
 		process.cache.afk = true;
 		await wait(process.istest ? 10 : 20000);
 		process.cache.afk = false;
@@ -148,7 +148,7 @@ class NodeConnectEvent extends Listener {
 								}
 							})
 							.catch((e) => { });
-					}, 30000);
+					}, 1000);
 				});
 				process.cache.tacs[res_guild.guildID].on('end', () => {
 					ext.num--;

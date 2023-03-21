@@ -20,7 +20,6 @@ mongoose
 		process.cache = {
 			await: [],
 			recovery: [],
-			interval: false,
 			cooldowns: [],
 			tacs: [],
 			interval: [],

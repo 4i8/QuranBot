@@ -16,7 +16,7 @@ class QueueEndEvent extends Listener {
 	 */
 	async run(player) {
 		try {
-			player.MessagePlayer.delete().catch(() => {});;
+			player.MessagePlayer.delete().catch(() => {});
 			player.MessagePlayercollector.stop();
 		} catch {}
 	}

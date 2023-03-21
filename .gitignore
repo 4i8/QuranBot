@@ -4,3 +4,4 @@ test
 .vscode
 .config.s.json
 config.json
+package-lock.json

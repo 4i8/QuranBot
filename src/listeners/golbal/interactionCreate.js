@@ -36,7 +36,7 @@ class interactionCreate extends Listener {
 			).commands();
 		}
 		if (!interaction.user.bot && interaction.isButton()) {
-			let [key, value, user, page] = interaction.customId?.split('&-&');
+			let [key, value, user, page] = interaction?.customId?.split('&-&') || [];
 			page = parseInt(page);
 			if (key === 'quran' || key === 'pin') {
 				await interaction.deferUpdate().catch(() => {});

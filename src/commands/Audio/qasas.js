@@ -135,6 +135,16 @@ class QasasCommand extends Command {
 			}
 		}
 		async function play(isloop = FindGuild?.loop || false) {
+			let PlayerManager = client.manager.get(interaction.guildId);
+			if (PlayerManager?.queue.size + 1 > 114) {
+				//limit play quran
+				embed(interaction, await resolveKey(interaction, 'commands:play_limit'), 'e', {
+					interaction: {
+						stats: true
+					}
+				});
+				return;
+			}
 			const player = client.manager.create({
 				guild: interaction.guildId,
 				textChannel: interaction.member.voice.channelId,
