@@ -2,7 +2,7 @@ const { Command } = require('@sapphire/framework');
 const ms = require('ms');
 const { embed, resolveKey } = require('../../lib/structures/exports');
 const guildSchema = require('../../schema/guild');
-const PrayerData = require('../../data/prayer.json');
+const PrayerData = require('../../data/prayer.json').countries;
 class PrayerCommand extends Command {
 	/**
 	 *
@@ -40,12 +40,7 @@ class PrayerCommand extends Command {
 					type: 'STRING',
 					description: `الدولة المراد تحديد أوقات الصلاة لها/Country to set prayer times for`,
 					required: true,
-					choices: PrayerData.countries.map((x) => {
-						return {
-							name: x.name,
-							value: x.country
-						};
-					})
+					autocomplete: true
 				},
 				{
 					name: 'المنشنmention',
@@ -56,7 +51,20 @@ class PrayerCommand extends Command {
 			]
 		});
 	}
-
+	/**
+	 *
+	 * @param {Command.AutocompleteInteraction} interaction
+	 */
+	async autocompleteRun(interaction) {
+		const focused = interaction.options.getFocused(true);
+		let language = (await guildSchema.findOne({ guildID: interaction.guild.id }).then((res) => res.language)) || 'AR';
+		if (focused.name == 'الدولةcountry') {
+			const filtered = PrayerData.filter(
+				(Prayer) => Prayer.name.includes(focused.value) || Prayer.en_name.toLowerCase().includes(focused.value.toLowerCase())
+			).slice(0, 25);
+			await interaction.respond(filtered.map((a) => ({ name: `${language === 'AR' ? a.name : a.en_name}`, value: a.country.toString() })));
+		}
+	}
 	/**
 	 *
 	 * @param {Command.ChatInputInteraction} interaction

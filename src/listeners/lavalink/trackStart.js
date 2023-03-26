@@ -56,6 +56,18 @@ class TrackStartEvent extends Listener {
 						custom_id: 'vup'
 					}
 				]
+			},
+			{
+				type: 1,
+				components: [
+					{
+						type: 2,
+						emoji: client.config.emojis.audio_id.loop,
+						style: player.queueRepeat ? 3 : 4,
+						custom_id: 'loop',
+						disabled: true
+					}
+				]
 			}
 		];
 		const guild = client.guilds.cache.get(player.guild);
@@ -117,9 +129,9 @@ class TrackStartEvent extends Listener {
 		player.MessagePlayer = NOW;
 		player.MessagePlayercollector = collector;
 		collector.on('collect', async (i) => {
-			let player = client.manager.get(i.guildId);
+			let player = client.manager.players.get(i.guildId);
 			let evolume = client.config.emojis.audio.play;
-			await i.deferUpdate().catch(() => {});
+			await i.deferUpdate().catch(() => { });
 			if (!player || player.queue.size < 0 || !player.queue.current) {
 				return collector.stop();
 			}

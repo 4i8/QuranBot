@@ -2,119 +2,682 @@
 	"key": "d25f11621314910497c0c27c62c955a0",
 	"countries": [
 		{
-			"timezone": "Asia/Riyadh",
-			"country": "Riyadh",
-			"name": "المملكة العربية السعودية (الرياض)"
+			"timezone": "Africa/Algiers",
+			"country": "Algiers",
+			"name": "الجزائر (الجزائر)",
+			"en_name": "Algeria (Algiers)"
 		},
 		{
-			"timezone": "Asia/Riyadh",
-			"country": "Makkah",
-			"name": "المملكة العربية السعودية (مكة المكرمة)"
-		},
-		{
-			"timezone": "Africa/Cairo",
-			"country": "Cairo",
-			"name": "مصر (القاهرة)"
-		},
-		{
-			"timezone": "Asia/Damascus",
-			"country": "Damascus",
-			"name": "سوريا (دمشق)"
-		},
-		{
-			"timezone": "Asia/Baghdad",
-			"country": "Baghdad",
-			"name": "العراق (بغداد)"
-		},
-		{
-			"timezone": "Asia/Jerusalem",
-			"country": "Jerusalem",
-			"name": "فلسطين (القدس)"
-		},
-		{
-			"timezone": "Asia/Amman",
-			"country": "Amman",
-			"name": "الأردن (عمان)"
-		},
-		{
-			"timezone": "Asia/Kuwait",
-			"country": "Kuwait",
-			"name": "الكويت (الكويت)"
-		},
-		{
-			"timezone": "Asia/Beirut",
-			"country": "Beirut",
-			"name": "لبنان (بيروت)"
-		},
-		{
-			"timezone": "Africa/Tripoli",
-			"country": "Tripoli",
-			"name": "ليبيا (طرابلس)"
+			"timezone": "Africa/Johannesburg",
+			"country": "Capetown",
+			"name": "جنوب إفريقيا (كيب تاون)",
+			"en_name": "South Africa (Capetown)"
 		},
 		{
 			"timezone": "Africa/Casablanca",
 			"country": "Casablanca",
-			"name": "المغرب (الدار البيضاء)"
+			"name": "المغرب (الدار البيضاء)",
+			"en_name": "Morocco (Casablanca)"
+		},
+		{
+			"timezone": "Africa/Casablanca",
+			"country": "Fez",
+			"name": "المغرب (FEZ)",
+			"en_name": "Morocco (Fez)"
+		},
+		{
+			"timezone": "Africa/Johannesburg",
+			"country": "Johannesburg",
+			"name": "جنوب إفريقيا (جوهانسبرغ)",
+			"en_name": "South Africa (Johannesburg)"
+		},
+		{
+			"timezone": "Africa/Lagos",
+			"country": "Lagos",
+			"name": "نيجيريا (لاغوس)",
+			"en_name": "Nigeria (Lagos)"
+		},
+		{
+			"timezone": "Africa/Casablanca",
+			"country": "Marrakech",
+			"name": "المغرب (مراكش)",
+			"en_name": "Morocco (Marrakech)"
+		},
+		{
+			"timezone": "Africa/Casablanca",
+			"country": "Rabat",
+			"name": "المغرب (الرباط)",
+			"en_name": "Morocco (Rabat)"
 		},
 		{
 			"timezone": "Africa/Tunis",
 			"country": "Tunis",
-			"name": "تونس (تونس)"
+			"name": "تونس (تونس)",
+			"en_name": "Tunisia (Tunis)"
+		},
+		{
+			"timezone": "Asia/Almaty",
+			"country": "Astana",
+			"name": "كازاخستان (أستانا)",
+			"en_name": "Kazakhstan (Astana)"
+		},
+		{
+			"timezone": "Asia/Shanghai",
+			"country": "Beijing",
+			"name": "الصين (بكين)",
+			"en_name": "China (Beijing)"
+		},
+		{
+			"timezone": "Asia/Kolkata",
+			"country": "Chennai",
+			"name": "الهند (تشيناي)",
+			"en_name": "India (Chennai)"
+		},
+		{
+			"timezone": "Asia/Colombo",
+			"country": "Colombo",
+			"name": "سري لانكا (كولومبو)",
+			"en_name": "Sri Lanka (Colombo)"
+		},
+		{
+			"timezone": "Asia/Dhaka",
+			"country": "Dhaka",
+			"name": "بنغلاديش (دكا)",
+			"en_name": "Bangladesh (Dhaka)"
+		},
+		{
+			"timezone": "Asia/Hong_Kong",
+			"country": "Hong Kong",
+			"name": "الصين (هونغ كونغ)",
+			"en_name": "China (Hong Kong)"
+		},
+		{
+			"timezone": "Asia/Karachi",
+			"country": "Islamabad",
+			"name": "باكستان (إسلام أباد)",
+			"en_name": "Pakistan (Islamabad)"
+		},
+		{
+			"timezone": "Asia/Jakarta",
+			"country": "Jakarta",
+			"name": "إندونيسيا (جاكرتا)",
+			"en_name": "Indonesia (Jakarta)"
+		},
+		{
+			"timezone": "Asia/Kabul",
+			"country": "Kabul",
+			"name": "أفغانستان (كابول)",
+			"en_name": "Afghanistan (Kabul)"
+		},
+		{
+			"timezone": "Asia/Karachi",
+			"country": "Karachi",
+			"name": "باكستان (كراتشي)",
+			"en_name": "Pakistan (Karachi)"
+		},
+		{
+			"timezone": "Asia/Karachi",
+			"country": "Lahore",
+			"name": "باكستان (لاهور)",
+			"en_name": "Pakistan (Lahore)"
+		},
+		{
+			"timezone": "Europe/Moscow",
+			"country": "Makhachkala",
+			"name": "داغستان (ماخاتشكالا)",
+			"en_name": "Dagestan (Makhachkala)"
+		},
+		{
+			"timezone": "Asia/Kolkata",
+			"country": "Mumbai",
+			"name": "الهند (مومباي)",
+			"en_name": "India (Mumbai)"
+		},
+		{
+			"timezone": "Asia/Kolkata",
+			"country": "New Dellhi",
+			"name": "الهند (نيودلهي)",
+			"en_name": "India (New Dellhi)"
+		},
+		{
+			"timezone": "Asia/Kolkata",
+			"country": "Samarkand",
+			"name": "أوزبكستان (سمراركاند)",
+			"en_name": "Uzbekistan (Samarkand)"
+		},
+		{
+			"timezone": "Asia/Seoul",
+			"country": "Seoul",
+			"name": "كوريا الجنوبية (سيول)",
+			"en_name": "South Korea (Seoul)"
+		},
+		{
+			"timezone": "Asia/Shanghai",
+			"country": "Shanghai",
+			"name": "الصين (شنغهاي)",
+			"en_name": "China (Shanghai)"
+		},
+		{
+			"timezone": "Asia/Singapore",
+			"country": "Singapore",
+			"name": "غير محدد (سنغافورة)",
+			"en_name": "undefined (Singapore)"
+		},
+		{
+			"timezone": "Asia/Taipei",
+			"country": "Taipei",
+			"name": "تايوان (تايبيه)",
+			"en_name": "Taiwan (Taipei)"
+		},
+		{
+			"timezone": "Asia/Tashkent",
+			"country": "Tashkent",
+			"name": "أوزبكستان (طشقنت)",
+			"en_name": "Uzbekistan (Tashkent)"
+		},
+		{
+			"timezone": "Asia/Tokyo",
+			"country": "Tokyo",
+			"name": "اليابان (طوكيو)",
+			"en_name": "Japan (Tokyo)"
+		},
+		{
+			"timezone": "Asia/Ulaanbaatar",
+			"country": "Ulaanbaatar",
+			"name": "منغوليا (Ulaanbaatar)",
+			"en_name": "Mongolia (Ulaanbaatar)"
+		},
+		{
+			"timezone": "Australia/Adelaide",
+			"country": "Adelaide",
+			"name": "أستراليا (أديليد)",
+			"en_name": "Australia (Adelaide)"
+		},
+		{
+			"timezone": "Pacific/Auckland",
+			"country": "Auckland",
+			"name": "نيوزيلندا (أوكلاند)",
+			"en_name": "New Zealand (Auckland)"
+		},
+		{
+			"timezone": "Pacific/Auckland",
+			"country": "Brisbane",
+			"name": "أستراليا (بريسبان)",
+			"en_name": "Australia (Brisbane)"
+		},
+		{
+			"timezone": "Pacific/Auckland",
+			"country": "Darwin",
+			"name": "أستراليا (داروين)",
+			"en_name": "Australia (Darwin)"
+		},
+		{
+			"timezone": "Australia/Perth",
+			"country": "Perth",
+			"name": "أستراليا (بيرث)",
+			"en_name": "Australia (Perth)"
+		},
+		{
+			"timezone": "Australia/Sydney",
+			"country": "Sydney",
+			"name": "أستراليا (سيدني)",
+			"en_name": "Australia (Sydney)"
+		},
+		{
+			"timezone": "Australia/Hobart",
+			"country": "Tasmania",
+			"name": "أستراليا (تسمانيا)",
+			"en_name": "Australia (Tasmania)"
+		},
+		{
+			"timezone": "Australia/Hobart",
+			"country": "Amsterdam",
+			"name": "هولندا (أمستردام)",
+			"en_name": "Netherlands (Amsterdam)"
+		},
+		{
+			"timezone": "Europe/London",
+			"country": "Belfast",
+			"name": "أيرلندا الشمالية (بلفاست)",
+			"en_name": "Northern Ireland (Belfast)"
+		},
+		{
+			"timezone": "Europe/Berlin",
+			"country": "Berlin",
+			"name": "ألمانيا (برلين)",
+			"en_name": "Germany (Berlin)"
+		},
+		{
+			"timezone": "Europe/London",
+			"country": "Birmingham",
+			"name": "المملكة المتحدة (برمنغهام)",
+			"en_name": "UK (Birmingham)"
+		},
+		{
+			"timezone": "Europe/Brussels",
+			"country": "Brussels",
+			"name": "بلجيكا (بروكسل)",
+			"en_name": "Belgium (Brussels)"
+		},
+		{
+			"timezone": "Europe/Bucharest",
+			"country": "Bucharest",
+			"name": "رومانيا (بوخارست)",
+			"en_name": "Romania (Bucharest)"
+		},
+		{
+			"timezone": "Europe/Budapest",
+			"country": "Budapest",
+			"name": "المجر (بودابست)",
+			"en_name": "Hungary (Budapest)"
+		},
+		{
+			"timezone": "America/Argentina/Cordoba",
+			"country": "Cordoba",
+			"name": "إسبانيا (قرطبة)",
+			"en_name": "Spain (Cordoba)"
+		},
+		{
+			"timezone": "Europe/Dublin",
+			"country": "Dublin",
+			"name": "أيرلندا (دبلن)",
+			"en_name": "Ireland (Dublin)"
+		},
+		{
+			"timezone": "Europe/Dublin",
+			"country": "Edinburgh",
+			"name": "المملكة المتحدة (أدنبرة)",
+			"en_name": "UK (Edinburgh)"
+		},
+		{
+			"timezone": "Europe/Berlin",
+			"country": "Frankfurt",
+			"name": "ألمانيا (فرانكفورت)",
+			"en_name": "Germany (Frankfurt)"
+		},
+		{
+			"timezone": "Europe/London",
+			"country": "Glasgow",
+			"name": "المملكة المتحدة (غلاسكو)",
+			"en_name": "UK (Glasgow)"
+		},
+		{
+			"timezone": "Europe/Helsinki",
+			"country": "Helsinki",
+			"name": "فنلندا (هلسنكي)",
+			"en_name": "Finland (Helsinki)"
+		},
+		{
+			"timezone": "Europe/Lisbon",
+			"country": "Lisbon",
+			"name": "البرتغال (لشبونة)",
+			"en_name": "Portugal (Lisbon)"
+		},
+		{
+			"timezone": "Europe/London",
+			"country": "London",
+			"name": "المملكة المتحدة (لندن)",
+			"en_name": "UK (London)"
+		},
+		{
+			"timezone": "Europe/Madrid",
+			"country": "Madrid",
+			"name": "إسبانيا (مدريد)",
+			"en_name": "Spain (Madrid)"
+		},
+		{
+			"timezone": "America/Jamaica",
+			"country": "Manchester",
+			"name": "المملكة المتحدة (مانشستر)",
+			"en_name": "UK (Manchester)"
+		},
+		{
+			"timezone": "Europe/Rome",
+			"country": "Milan",
+			"name": "إيطاليا (ميلانو)",
+			"en_name": "Italy (Milan)"
+		},
+		{
+			"timezone": "Europe/Moscow",
+			"country": "Moscow",
+			"name": "روسيا، موسكو)",
+			"en_name": "Russia (Moscow)"
+		},
+		{
+			"timezone": "Europe/Berlin",
+			"country": "Munich",
+			"name": "ألمانيا (ميونيخ)",
+			"en_name": "Germany (Munich)"
+		},
+		{
+			"timezone": "Europe/Rome",
+			"country": "Naples",
+			"name": "إيطاليا (نابولي)",
+			"en_name": "Italy (Naples)"
+		},
+		{
+			"timezone": "Europe/Oslo",
+			"country": "Oslo",
+			"name": "النرويج (أوسلو)",
+			"en_name": "Norway (Oslo)"
+		},
+		{
+			"timezone": "Europe/Paris",
+			"country": "Paris",
+			"name": "فرنسا باريس)",
+			"en_name": "France (Paris)"
+		},
+		{
+			"timezone": "Europe/Prague",
+			"country": "Prague",
+			"name": "جمهورية التشيك (براغ)",
+			"en_name": "Czech Republic (Prague)"
+		},
+		{
+			"timezone": "Europe/Prague",
+			"country": "Pristina",
+			"name": "كوسوفو (بريستينا)",
+			"en_name": "Kosovo (Pristina)"
+		},
+		{
+			"timezone": "Europe/Rome",
+			"country": "Rome",
+			"name": "إيطاليا (روما)",
+			"en_name": "Italy (Rome)"
+		},
+		{
+			"timezone": "Europe/Sarajevo",
+			"country": "Sarajevo",
+			"name": "البوسنة والهرسك (سراييفو)",
+			"en_name": "Bosnia and Herzegovina (Sarajevo)"
+		},
+		{
+			"timezone": "Europe/Sofia",
+			"country": "Sofia",
+			"name": "بلغاريا (صوفيا)",
+			"en_name": "Bulgaria (Sofia)"
+		},
+		{
+			"timezone": "Europe/Stockholm",
+			"country": "Stockholm",
+			"name": "السويد (ستوكهولم)",
+			"en_name": "Sweden (Stockholm)"
+		},
+		{
+			"timezone": "Europe/Tirane",
+			"country": "Tirana",
+			"name": "ألبانيا (تيرانا)",
+			"en_name": "Albania (Tirana)"
+		},
+		{
+			"timezone": "America/Caracas",
+			"country": "Valencia",
+			"name": "إسبانيا (فالنسيا)",
+			"en_name": "Spain (Valencia)"
+		},
+		{
+			"timezone": "Europe/Vienna",
+			"country": "Vienna",
+			"name": "النمسا (فيينا)",
+			"en_name": "Austria (Vienna)"
+		},
+		{
+			"timezone": "Europe/Zurich",
+			"country": "Zurich",
+			"name": "سويسرا (زيوريخ)",
+			"en_name": "Switzerland (Zurich)"
+		},
+		{
+			"timezone": "Asia/Riyadh",
+			"country": "Makkah",
+			"name": "المملكة العربية السعودية (مكة)",
+			"en_name": "Saudi Arabia (Makkah)"
+		},
+		{
+			"timezone": "Asia/Riyadh",
+			"country": "Madinah",
+			"name": "المملكة العربية السعودية (المدينة المنورة)",
+			"en_name": "Saudi Arabia (Madinah)"
+		},
+		{
+			"timezone": "Asia/Riyadh",
+			"country": "Riyadh",
+			"name": "المملكة العربية السعودية (الرياض)",
+			"en_name": "Saudi Arabia (Riyadh)"
 		},
 		{
 			"timezone": "Asia/Dubai",
 			"country": "Dubai",
-			"name": "الإمارات العربية المتحدة (دبي)"
+			"name": "الإمارات (دبي)",
+			"en_name": "UAE (Dubai)"
 		},
 		{
-			"timezone": "Asia/Bahrain",
-			"country": "Bahrain",
-			"name": "البحرين (المنامة)"
+			"timezone": "Asia/Dubai",
+			"country": "Abu Dhabi",
+			"name": "الإمارات (أبو ظبي)",
+			"en_name": "UAE (Abu Dhabi)"
 		},
 		{
-			"timezone": "Asia/Qatar",
-			"country": "Qatar",
-			"name": "قطر (دوحة)"
+			"timezone": "Asia/Dubai",
+			"country": "Sharjah",
+			"name": "الإمارات (الشارقة)",
+			"en_name": "UAE (Sharjah)"
 		},
 		{
-			"timezone": "Asia/Aden",
-			"country": "Aden",
-			"name": "اليمن (عدن)"
+			"timezone": "Asia/Dubai",
+			"country": "Ajman",
+			"name": "الإمارات (أجمان)",
+			"en_name": "UAE (Ajman)"
 		},
 		{
-			"timezone": "Africa/Mogadishu",
-			"country": "Mogadishu",
-			"name": "الصومال (مقديشو)"
+			"timezone": "Asia/Dubai",
+			"country": "Ras Al Khaimah",
+			"name": "الإمارات العربية المتحدة (راس الخمير)",
+			"en_name": "UAE (Ras Al Khaimah)"
 		},
 		{
-			"timezone": "Africa/Khartoum",
-			"country": "Khartoum",
-			"name": "السودان (الخرطوم)"
+			"timezone": "Asia/Dubai",
+			"country": "Umm Al Quwain",
+			"name": "الإمارات العربية المتحدة (أم القوانين)",
+			"en_name": "UAE (Umm Al Quwain)"
 		},
 		{
 			"timezone": "Asia/Muscat",
 			"country": "Muscat",
-			"name": "سلطنة عمان (مسقط)"
+			"name": "عمان (مسقط)",
+			"en_name": "Oman (Muscat)"
 		},
 		{
-			"timezone": "Indian/Comoro",
-			"country": "Moroni",
-			"name": "جزر القمر (موروني)"
+			"timezone": "Asia/Damascus",
+			"country": "Damascus",
+			"name": "سوريا (دمشق)",
+			"en_name": "Syria (Damascus)"
 		},
 		{
-			"timezone": "Africa/Nouakchott",
-			"country": "Nouakchott",
-			"name": "موريتانيا (نواكشوط)"
+			"timezone": "Asia/Damascus",
+			"country": "Aleppo",
+			"name": "سوريا (حلب)",
+			"en_name": "Syria (Aleppo)"
 		},
 		{
-			"timezone": "Africa/Algiers",
-			"country": "Algiers",
-			"name": "الجزائر (الجزائر)"
+			"timezone": "Asia/Baghdad",
+			"country": "Baghdad",
+			"name": "العراق بغداد)",
+			"en_name": "Iraq (Baghdad)"
 		},
 		{
-			"timezone": "Africa/Djibouti",
-			"country": "Djibouti",
-			"name": "جيبوتي (جيبوتي)"
+			"timezone": "Asia/Baghdad",
+			"country": "Mosul",
+			"name": "العراق (الموصل)",
+			"en_name": "Iraq (Mosul)"
+		},
+		{
+			"timezone": "Asia/Tehran",
+			"country": "Tehran",
+			"name": "إيران (طهران)",
+			"en_name": "Iran (Tehran)"
+		},
+		{
+			"timezone": "Asia/Tehran",
+			"country": "Isfahan",
+			"name": "إيران (أصفهان)",
+			"en_name": "Iran (Isfahan)"
+		},
+		{
+			"timezone": "Europe/Istanbul",
+			"country": "Istanbul",
+			"name": "تركيا (اسطنبول)",
+			"en_name": "Turkey (Istanbul)"
+		},
+		{
+			"timezone": "Europe/Istanbul",
+			"country": "Konya",
+			"name": "تركيا (كونيا)",
+			"en_name": "Turkey (Konya)"
+		},
+		{
+			"timezone": "Africa/Cairo",
+			"country": "Cairo",
+			"name": "مصر القاهرة)",
+			"en_name": "Egypt (Cairo)"
+		},
+		{
+			"timezone": "Africa/Cairo",
+			"country": "Alexandria",
+			"name": "مصر (الإسكندرية)",
+			"en_name": "Egypt (Alexandria)"
+		},
+		{
+			"timezone": "Asia/Aden",
+			"country": "Aden",
+			"name": "اليمن (عدن)",
+			"en_name": "Yemen (Aden)"
+		},
+		{
+			"timezone": "Asia/Aden",
+			"country": "Sanaa",
+			"name": "اليمن (سانا)",
+			"en_name": "Yemen (Sanaa)"
+		},
+		{
+			"timezone": "Asia/Jerusalem",
+			"country": "Jerusalem",
+			"name": "فلسطين (القدس)",
+			"en_name": "Palestine (Alkades)"
+		},
+		{
+			"timezone": "America/Chicago",
+			"country": "Chicago",
+			"name": "IL (شيكاغو)",
+			"en_name": "IL (Chicago)"
+		},
+		{
+			"timezone": "America/Denver",
+			"country": "Denver",
+			"name": "CO (دنفر)",
+			"en_name": "CO (Denver)"
+		},
+		{
+			"timezone": "America/Edmonton",
+			"country": "Edmonton",
+			"name": "كندا (إدمونتون)",
+			"en_name": "Canada (Edmonton)"
+		},
+		{
+			"timezone": "America/Halifax",
+			"country": "Halifax",
+			"name": "كندا (هاليفاكس)",
+			"en_name": "Canada (Halifax)"
+		},
+		{
+			"timezone": "America/Havana",
+			"country": "Havana",
+			"name": "كوبا (هافانا)",
+			"en_name": "Cuba (Havana)"
+		},
+		{
+			"timezone": "Pacific/Honolulu",
+			"country": "Honolulu",
+			"name": "هاواي (هونولولو)",
+			"en_name": "Hawaii (Honolulu)"
+		},
+		{
+			"timezone": "America/Chicago",
+			"country": "Houston",
+			"name": "تكساس (هيوستن)",
+			"en_name": "TX (Houston)"
+		},
+		{
+			"timezone": "America/Los_Angeles",
+			"country": "Los Angeles",
+			"name": "كاليفورنيا (لوس أنجلوس)",
+			"en_name": "CA (Los Angeles)"
+		},
+		{
+			"timezone": "America/Toronto",
+			"country": "Montreal",
+			"name": "كندا (مونتريال)",
+			"en_name": "Canada (Montreal)"
+		},
+		{
+			"timezone": "America/New_York",
+			"country": "New York",
+			"name": "نيويورك (نيويورك)",
+			"en_name": "NY (New York)"
+		},
+		{
+			"timezone": "America/Regina",
+			"country": "Regina",
+			"name": "كندا (ريجينا)",
+			"en_name": "Canada (Regina)"
+		},
+		{
+			"timezone": "America/Toronto",
+			"country": "Toronto",
+			"name": "كندا (تورونتو)",
+			"en_name": "Canada (Toronto)"
+		},
+		{
+			"timezone": "America/Vancouver",
+			"country": "Vancouver",
+			"name": "كندا (فانكوفر)",
+			"en_name": "Canada (Vancouver)"
+		},
+		{
+			"timezone": "America/Argentina/Buenos_Aires",
+			"country": "Buenos Aires",
+			"name": "الأرجنتين (بوينس آيرس)",
+			"en_name": "Argentina (Buenos Aires)"
+		},
+		{
+			"timezone": "America/Caracas",
+			"country": "Caracas",
+			"name": "فنزويلا (كاراكاس)",
+			"en_name": "Venezuela (Caracas)"
+		},
+		{
+			"timezone": "America/Lima",
+			"country": "Lima",
+			"name": "بيرو (ليما)",
+			"en_name": "Peru (Lima)"
+		},
+		{
+			"timezone": "America/Mexico_City",
+			"country": "Mexico City",
+			"name": "المكسيك (مكسيكو سيتي)",
+			"en_name": "Mexico (Mexico City)"
+		},
+		{
+			"timezone": "America/Santiago",
+			"country": "Santiago",
+			"name": "تشيلي (سانتياغو)",
+			"en_name": "Chile (Santiago)"
+		},
+		{
+			"timezone": "America/Sao_Paulo",
+			"country": "Sao Paulo",
+			"name": "البرازيل (ساو باولو)",
+			"en_name": "Brazil (Sao Paulo)"
 		}
 	]
 }

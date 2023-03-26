@@ -32,6 +32,7 @@ module.exports = class Client extends SapphireClient {
 		this.manager = new Manager({
 			nodes: [this.config.settings.nodes[this.random(0, this.config.settings.nodes.length - 1)]],
 			autoPlay: true,
+			shards: this.shard ? this.shard.count : 1,
 			send(id, payload) {
 				const guild = that.guilds.cache.get(id);
 				if (guild) guild.shard.send(payload);

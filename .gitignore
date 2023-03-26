@@ -5,3 +5,4 @@ test
 .config.s.json
 config.json
 package-lock.json
+dev
