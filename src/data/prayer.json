@@ -135,13 +135,13 @@
 		},
 		{
 			"timezone": "Asia/Kolkata",
-			"country": "New Dellhi",
+			"country": "New+Delhi%2CIndia",
 			"name": "الهند (نيودلهي)",
 			"en_name": "India (New Dellhi)"
 		},
 		{
 			"timezone": "Asia/Kolkata",
-			"country": "Samarkand",
+			"country": "Samarkand%2CUzbekistan",
 			"name": "أوزبكستان (سمراركاند)",
 			"en_name": "Uzbekistan (Samarkand)"
 		},
@@ -201,13 +201,13 @@
 		},
 		{
 			"timezone": "Pacific/Auckland",
-			"country": "Brisbane",
+			"country": "Brisbane%2CAustralia",
 			"name": "أستراليا (بريسبان)",
 			"en_name": "Australia (Brisbane)"
 		},
 		{
 			"timezone": "Pacific/Auckland",
-			"country": "Darwin",
+			"country": "Darwin%2CAustralia",
 			"name": "أستراليا (داروين)",
 			"en_name": "Australia (Darwin)"
 		},
@@ -231,7 +231,7 @@
 		},
 		{
 			"timezone": "Australia/Hobart",
-			"country": "Amsterdam",
+			"country": "Amsterdam%2CNetherlands",
 			"name": "هولندا (أمستردام)",
 			"en_name": "Netherlands (Amsterdam)"
 		},
@@ -285,7 +285,7 @@
 		},
 		{
 			"timezone": "Europe/Dublin",
-			"country": "Edinburgh",
+			"country": "Edinburgh%2CUK",
 			"name": "المملكة المتحدة (أدنبرة)",
 			"en_name": "UK (Edinburgh)"
 		},
@@ -374,12 +374,6 @@
 			"en_name": "Czech Republic (Prague)"
 		},
 		{
-			"timezone": "Europe/Prague",
-			"country": "Pristina",
-			"name": "كوسوفو (بريستينا)",
-			"en_name": "Kosovo (Pristina)"
-		},
-		{
 			"timezone": "Europe/Rome",
 			"country": "Rome",
 			"name": "إيطاليا (روما)",
@@ -465,7 +459,7 @@
 		},
 		{
 			"timezone": "Asia/Dubai",
-			"country": "Ajman",
+			"country": "Ajman%2C+United+Arab+Emirates",
 			"name": "الإمارات (أجمان)",
 			"en_name": "UAE (Ajman)"
 		},
