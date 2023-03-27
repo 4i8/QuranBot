@@ -42,30 +42,30 @@ mongoose
 				// BasisTime = BasisTime.split(':')[0].split('')[0] === '0' ? BasisTime.replace(/0/, '') : BasisTime;
 				const DataPrayer = !FindCountry
 					? await fetch(`https://api.aladhan.com/v1/timingsByAddress?address=${country}`)
-							.then((res) => res.json())
-							.then((json) => {
-								if (json?.message === 'API rate limit exceeded') return false;
-								return Object.assign(
-									{ date: json.data.date.gregorian.date },
-									Object.assign(
-										Object.keys(json.data.timings)
-											.filter(
-												(x) => x !== 'Imsak' && x !== 'Midnight' && x !== 'Firstthird' && x !== 'Lastthird' && x !== 'Sunset'
-											)
-											.map((x) => {
-												return {
-													[x.toLowerCase().replace('sunrise', 'shurooq')]: json.data.timings[x]
-												};
-											})
-									).reduce((a, b) => Object.assign(a, b), {})
-								);
-							})
-							.catch((err) => {
-								console.log(err);
-								hook(err.toString()).error();
-							})
+						.then((res) => res.json())
+						.then((json) => {
+							if (json?.message === 'API rate limit exceeded') return false;
+							return Object.assign(
+								{ date: json.data.date.gregorian.date },
+								Object.assign(
+									Object.keys(json.data.timings)
+										.filter(
+											(x) => x !== 'Imsak' && x !== 'Midnight' && x !== 'Firstthird' && x !== 'Lastthird' && x !== 'Sunset'
+										)
+										.map((x) => {
+											return {
+												[x.toLowerCase().replace('sunrise', 'shurooq')]: json.data.timings[x]
+											};
+										})
+								).reduce((a, b) => Object.assign(a, b), {})
+							);
+						})
+						.catch((err) => {
+							console.log(err);
+							hook(err.toString()).error();
+						})
 					: FindCountry.prayer[0]?.date !== BasisDate
-					? await fetch(`https://api.aladhan.com/v1/timingsByAddress?address=${country}`)
+						? await fetch(`https://api.aladhan.com/v1/timingsByAddress?address=${country}`)
 							.then((res) => res.json())
 							.then((json) => {
 								if (json?.message === 'API rate limit exceeded') return false;
@@ -88,7 +88,7 @@ mongoose
 								console.log(err);
 								hook(err.toString()).error();
 							})
-					: FindCountry;
+						: FindCountry;
 				if (!DataPrayer) return;
 				process.prayerCache.countries[country] = false;
 				if (!FindCountry) {
@@ -135,7 +135,7 @@ mongoose
 			}, 5000);
 			tacs.$lab(async ({ key, country, secret }, index, remove) => {
 				if (remove || process.prayerCache.list.includes(secret)) {
-					return tacs.next().catch(() => {});
+					return tacs.next().catch(() => { });
 				}
 				process.prayerCache.list.push(secret);
 				tacs.get({ secret: secret }).remove();
@@ -156,6 +156,7 @@ mongoose
 					data.prayer
 						.filter((data) => data.country === country && data?.channelID !== null)
 						.forEach(async (FindPrayer) => {
+							let msg = prayer.countries.filter((data) => data.country === country)[0]
 							new WebhookClient({
 								id: FindPrayer.webhookID,
 								token: FindPrayer.webhookToken
@@ -166,7 +167,7 @@ mongoose
 											.setTitle(
 												await resolveKey({ guild: data.guildID }, `extc:${key}`, {
 													replace: {
-														country: prayer.countries.filter((data) => data.country === country)[0].name
+														country: data.language === 'AR' ? msg.name : msg.en_name
 													}
 												})
 											)
@@ -193,7 +194,7 @@ mongoose
 								});
 						});
 				});
-				tacs.next().catch(() => {});
+				tacs.next().catch(() => { });
 			});
 			await wait(6000);
 		}
