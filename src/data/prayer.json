@@ -160,8 +160,8 @@
 		{
 			"timezone": "Asia/Singapore",
 			"country": "Singapore",
-			"name": "غير محدد (سنغافورة)",
-			"en_name": "undefined (Singapore)"
+			"name": "سنغافورة (سنغافورة)",
+			"en_name": "Singapore (Singapore)"
 		},
 		{
 			"timezone": "Asia/Taipei",
@@ -554,6 +554,24 @@
 			"en_name": "Yemen (Sanaa)"
 		},
 		{
+			"timezone": "Asia/Amman",
+			"country": "Amman",
+			"name": "الأردن (عمان)",
+			"en_name": "Jordan (Amman)"
+		},
+		{
+			"timezone": "Asia/Kuwait",
+			"country": "Kuwait",
+			"name": "الكويت (الكويت)",
+			"en_name": "Kuwait (Kuwait)"
+		},
+		{
+			"timezone": "Asia/Beirut",
+			"country": "Beirut",
+			"name": "لبنان (بيروت)",
+			"en_name": "Lebanon (Beirut)"
+		},
+		{
 			"timezone": "Asia/Jerusalem",
 			"country": "Jerusalem",
 			"name": "فلسطين (القدس)",
@@ -672,6 +690,54 @@
 			"country": "Sao Paulo",
 			"name": "البرازيل (ساو باولو)",
 			"en_name": "Brazil (Sao Paulo)"
+		},
+		{
+			"timezone": "Africa/Tripoli",
+			"country": "Tripoli",
+			"name": "ليبيا (طرابلس)",
+			"en_name": "Libya (Tripoli)"
+		},
+		{
+			"timezone": "Asia/Bahrain",
+			"country": "Bahrain",
+			"name": "البحرين (المنامة)",
+			"en_name": "Bahrain (Manama)"
+		},
+		{
+			"timezone": "Asia/Qatar",
+			"country": "Qatar",
+			"name": "قطر (دوحة)",
+			"en_name": "Qatar (Doha)"
+		},
+		{
+			"timezone": "Africa/Mogadishu",
+			"country": "Mogadishu",
+			"name": "الصومال (مقديشو)",
+			"en_name": "Somalia (Mogadishu)"
+		},
+		{
+			"timezone": "Africa/Khartoum",
+			"country": "Khartoum",
+			"name": "السودان (الخرطوم)",
+			"en_name": "Sudan (Khartoum)"
+		},
+		{
+			"timezone": "Indian/Comoro",
+			"country": "Moroni",
+			"name": "جزر القمر (موروني)",
+			"en_name": "Comoros (Moroni)"
+		},
+		{
+			"timezone": "Africa/Nouakchott",
+			"country": "Nouakchott",
+			"name": "موريتانيا (نواكشوط)",
+			"en_name": "Mauritania (Nouakchott)"
+		},
+		{
+			"timezone": "Africa/Djibouti",
+			"country": "Djibouti",
+			"name": "جيبوتي (جيبوتي)",
+			"en_name": "Djibouti (Djibouti)"
 		}
 	]
 }
