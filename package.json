@@ -41,6 +41,7 @@
 	},
 	"devDependencies": {
 		"@sapphire/prettier-config": "^1.4.3",
+		"auto-changelog": "^2.4.0",
 		"concurrently": "^7.6.0",
 		"forever": "^4.0.3",
 		"nodemon": "^2.0.19",
@@ -51,7 +52,8 @@
 		"watch": "concurrently \"nodemon -L --watch src\" \"nodemon ./extensions/prayer.js\"",
 		"start": "concurrently \"node ./src/shard.js\" \"node ./extensions/prayer.js\"",
 		"format": "prettier --write \"src/**/*.js\"",
-		"test": "nodemon ./src/index.js --test"
+		"test": "nodemon ./src/index.js --test",
+		"clog": "auto-changelog --output CHANGELOG.md --template keepachangelog --commit-limit false --unreleased --same-file"
 	},
 	"prettier": "@sapphire/prettier-config",
 	"repository": {
