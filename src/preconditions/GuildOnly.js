@@ -28,8 +28,8 @@ class GuildOnlyPrecondition extends AllFlowsPrecondition {
 	async GuildOnly(guild) {
 		return guild === null
 			? this.error({
-				message: await resolveKey({ guild: guild }, 'preconditions:guild_only')
-			})
+					message: await resolveKey({ guild: guild }, 'preconditions:guild_only')
+			  })
 			: this.ok();
 	}
 }

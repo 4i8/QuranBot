@@ -131,7 +131,7 @@ class TrackStartEvent extends Listener {
 		collector.on('collect', async (i) => {
 			let player = client.manager.players.get(i.guildId);
 			let evolume = client.config.emojis.audio.play;
-			await i.deferUpdate().catch(() => { });
+			await i.deferUpdate().catch(() => {});
 			if (!player || player.queue.size < 0 || !player.queue.current) {
 				return collector.stop();
 			}

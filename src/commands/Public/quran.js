@@ -45,7 +45,7 @@ class QuranCommand extends Command {
 	 * @param {Command.AutocompleteInteraction} interaction
 	 */
 	async autocompleteRun(interaction) {
-		let language = await guildSchema.findOne({ guildID: interaction.guild.id }).then((res) => res.language) || 'AR';
+		let language = (await guildSchema.findOne({ guildID: interaction.guild.id }).then((res) => res.language)) || 'AR';
 		const focused = interaction.options.getFocused(true);
 		if (focused.name == 'السورة-surah') {
 			const filtered = [];
@@ -54,23 +54,27 @@ class QuranCommand extends Command {
 			const matches = stringSimilarity.findBestMatch(
 				focused.value.toLowerCase(),
 				surahs.map((surah) => surah.name.toLowerCase()) ||
-				stringSimilarity.findBestMatch(
-					focused.value.toLowerCase(),
-					surahs.map((surah) => surah.transliteration_en.toLowerCase())
-				)
-				|| stringSimilarity.findBestMatch(
-					focused.value.toLowerCase(),
-					surahs.map((surah) => surah.id.toString())
-				)
+					stringSimilarity.findBestMatch(
+						focused.value.toLowerCase(),
+						surahs.map((surah) => surah.transliteration_en.toLowerCase())
+					) ||
+					stringSimilarity.findBestMatch(
+						focused.value.toLowerCase(),
+						surahs.map((surah) => surah.id.toString())
+					)
 			);
 			filtered.push(
 				...surahs
-					.filter(
-						(surah, index) =>
-							matches.ratings > 0 ? (surah.id == parseInt(focused.value) || surah.name.includes(focused.value) ||
-								surah.transliteration_en.includes(focused.value)) &&
-								index !== matches.bestMatchIndex : (surah.id == parseInt(focused.value) || surah.name.includes(focused.value) ||
-									surah.transliteration_en.includes(focused.value)))
+					.filter((surah, index) =>
+						matches.ratings > 0
+							? (surah.id == parseInt(focused.value) ||
+									surah.name.includes(focused.value) ||
+									surah.transliteration_en.includes(focused.value)) &&
+							  index !== matches.bestMatchIndex
+							: surah.id == parseInt(focused.value) ||
+							  surah.name.includes(focused.value) ||
+							  surah.transliteration_en.includes(focused.value)
+					)
 					.concat(matches.ratings > 0 ? surahs[matches.bestMatchIndex] : [])
 					.slice(0, 24)
 			);
@@ -79,7 +83,9 @@ class QuranCommand extends Command {
 			}
 			await interaction.respond(
 				filtered.map((s) => ({
-					name: `${s?.all ? language !== "AR" ? "page-" : 'الصفحة-' : language !== "AR" ? "ranks-" : 'الترتيب-'}${s.name.length > 99 ? language !== "AR" ? s.nameall_en : s.nameall : language !== "AR" ? s.transliteration_en : s.name}`,
+					name: `${s?.all ? (language !== 'AR' ? 'page-' : 'الصفحة-') : language !== 'AR' ? 'ranks-' : 'الترتيب-'}${
+						s.name.length > 99 ? (language !== 'AR' ? s.nameall_en : s.nameall) : language !== 'AR' ? s.transliteration_en : s.name
+					}`,
 					value: s?.all ? `${s.page.toString()}_true` : `${s.id.toString()}_false`
 				}))
 			);
@@ -138,8 +144,9 @@ class QuranCommand extends Command {
 				]
 			}
 		];
-		let transliteration = `**•\`${tl == 'AR' ? surah.name : 'Surah ' + surah.transliteration_en}\`\n \n•${lang.Musahaf.type}\`${tl == 'AR' ? surah.type_ar : surah.type_en
-			}\` •${lang.Musahaf.numberverses} \`${surah.verses}\`\n\n${lang.Musahaf.quailtybad}**`;
+		let transliteration = `**•\`${tl == 'AR' ? surah.name : 'Surah ' + surah.transliteration_en}\`\n \n•${lang.Musahaf.type}\`${
+			tl == 'AR' ? surah.type_ar : surah.type_en
+		}\` •${lang.Musahaf.numberverses} \`${surah.verses}\`\n\n${lang.Musahaf.quailtybad}**`;
 		if (surah.verses === true) transliteration = `**${tl == 'AR' ? surah.name : surah.transliteration_en}**`;
 		embed(interaction, transliteration, 'p-', {
 			title: `${lang.Musahaf.NumberPage} ${surah.page}`,

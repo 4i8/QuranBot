@@ -1,0 +1,22 @@
+{
+	"loop": "Toggle repeat mode (on/off)",
+	"nowplaying": "Show what audio is currently playing",
+	"pause": "Pause the audio. You can resume the audio using the command `/resume`",
+	"play": "Play the Quran in a voice channel with over 130 reciters",
+	"qasas": "Play the stories of the prophets",
+	"queue": "Browse the playlist",
+	"resume": "Resume the audio",
+	"seek": "Fast forward or rewind the audio",
+	"skip": "Skip the current audio track",
+	"stop": "Clear the playlist",
+	"volume": "Control the volume level",
+	"azkar": "Adjust the settings of the Azkar system.",
+	"khutma": "Adjust the settings of the Khutma system.",
+	"language": "Change the language of the bot.",
+	"prayer": "Adjust the settings of the prayer reminder.",
+	"recovery": "Activate the recovery system in case the bot is restarted",
+	"reset": "Reset the chat (text channel) for the Azkar, Khutma, and Prayer systems.",
+	"help": "List of available commands",
+	"ping": "Check the bot's speed with Discord",
+	"quran": "The Holy Quran"
+}

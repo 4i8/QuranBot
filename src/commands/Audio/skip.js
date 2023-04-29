@@ -1,6 +1,5 @@
 const { Command } = require('@sapphire/framework');
-const { embed , resolveKey} = require('../../lib/structures/exports');
-
+const { embed, resolveKey } = require('../../lib/structures/exports');
 
 class SkipCommand extends Command {
 	/**
@@ -39,17 +38,21 @@ class SkipCommand extends Command {
 		const { client } = this.container;
 		let player = client.manager.get(interaction.guildId);
 		player.stop();
-		return embed(interaction, await resolveKey(interaction, 'commands:skip_answer', {
-			replace: {
-				emoji: client.emoji.audio.skip,
-				title: player.queue.current.title
+		return embed(
+			interaction,
+			await resolveKey(interaction, 'commands:skip_answer', {
+				replace: {
+					emoji: client.emoji.audio.skip,
+					title: player.queue.current.title
+				}
+			}),
+			'p-',
+			{
+				interaction: {
+					stats: true
+				}
 			}
-		}),
-		'p-', {
-			interaction: {
-				stats: true
-			}
-		});
+		);
 	}
 }
 

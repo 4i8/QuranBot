@@ -28,8 +28,7 @@ class SameVoicePrecondition extends AllFlowsPrecondition {
 	 * @param {import('discord.js').GuildMember} clinet_member
 	 */
 	async doSameVoiceCheck(user_member, clinet_member) {
-		if (clinet_member.voice.channel &&
-			user_member.voice.channel !== clinet_member.voice.channel) {
+		if (clinet_member.voice.channel && user_member.voice.channel !== clinet_member.voice.channel) {
 			return this.error({
 				message: await resolveKey(user_member, 'preconditions:same_voice')
 			});

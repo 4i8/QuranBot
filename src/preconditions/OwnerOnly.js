@@ -2,7 +2,7 @@ const { AllFlowsPrecondition } = require('@sapphire/framework');
 const { settings } = require('../config.json');
 
 class OwnerOnlyPrecondition extends AllFlowsPrecondition {
-	#message = "This command can only be used by the owner.";
+	#message = 'This command can only be used by the owner.';
 	/**
 	 * @param {import('discord.js').CommandInteraction} interaction
 	 */

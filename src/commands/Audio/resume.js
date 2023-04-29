@@ -38,27 +38,37 @@ class ResumeCommand extends Command {
 		const { client } = this.container;
 		let player = client.manager.get(interaction.guildId);
 		if (!player.paused) {
-			embed(interaction, await resolveKey(interaction, "commands:resume_already_resume", {
-				replace: {
-					emoji: client.emoji.warn
+			embed(
+				interaction,
+				await resolveKey(interaction, 'commands:resume_already_resume', {
+					replace: {
+						emoji: client.emoji.warn
+					}
+				}),
+				'p-',
+				{
+					interaction: {
+						stats: true
+					}
 				}
-			}), 'p-', {
-				interaction: {
-					stats: true
-				}
-			});
+			);
 			return;
 		}
 		player.pause(false);
-		return embed(interaction, await resolveKey(interaction, "commands:resume_answer", {
-			replace: {
-				emoji: client.emoji.audio.pause
+		return embed(
+			interaction,
+			await resolveKey(interaction, 'commands:resume_answer', {
+				replace: {
+					emoji: client.emoji.audio.pause
+				}
+			}),
+			'p-',
+			{
+				interaction: {
+					stats: true
+				}
 			}
-		}), 'p-', {
-			interaction: {
-				stats: true
-			}
-		});
+		);
 	}
 }
 

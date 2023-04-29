@@ -1,6 +1,6 @@
 const { Command } = require('@sapphire/framework');
 const { embed, resolveKey } = require('../../lib/structures/exports');
-
+const glob = require('glob');
 class HelpCommand extends Command {
 	/**
 	 *
@@ -32,18 +32,28 @@ class HelpCommand extends Command {
 	 */
 	async chatInputRun(interaction) {
 		const { client } = this.container;
-		const commands = client.application?.commands.cache.map((cmd) => {
-			return {
-				id: cmd.id,
-				name: cmd.name,
-				description: cmd.description,
-				options: cmd.options
-			};
-		});
 		await interaction.deferReply({
 			ephemeral: false
 		});
+		const types = {
+			Audio: '🔉',
+			Mod: '🔧',
+			Public: '🌍'
+		};
+		const KEY = interaction.user.id + String(Date.now());
 		let components = [
+			{
+				type: 1,
+				components: Object.keys(types).map((type) => {
+					return {
+						type: 2,
+						style: 1,
+						label: types[type],
+						custom_id: type + KEY,
+						emoji: types[type]
+					};
+				})
+			},
 			{
 				type: 1,
 				components: [
@@ -68,26 +78,98 @@ class HelpCommand extends Command {
 				]
 			}
 		];
-		embed(
-			interaction,
-			(await resolveKey(interaction, 'commands:help')) +
-				`\n` +
-				commands
-					.map((cmd) => {
-						if (['help', 'hello'].includes(cmd.name)) return;
-						return `</${cmd.name}:${cmd.id}> - ${cmd.description}
-						`;
-					})
-					.filter((cmd) => cmd)
-					.join('\n'),
-			'p-',
-			{
-				interaction: {
-					stats: true
-				},
-				components: components
-			}
-		);
+		embed(interaction, await resolveKey(interaction, 'commands:help'), 'p-', {
+			interaction: {
+				stats: true
+			},
+			components: components
+		});
+		const collector = interaction.channel.createMessageComponentCollector({
+			filter: async (b) => {
+				if (b.user.id !== interaction.user.id) {
+					await b.deferReply({
+						ephemeral: true
+					});
+					embed(b, await resolveKey(interaction, 'commands:queue_no_permission'), 'e', {
+						interaction: {
+							stats: true,
+							ephemeral: true
+						}
+					});
+					return false;
+				} else {
+					return true;
+				}
+			},
+			time: 60 * 1000 * 10
+		});
+		collector.on('collect', async (button) => {
+			Object.keys(types).forEach(async (type) => {
+				if (button.customId === type + KEY) {
+					await button.deferUpdate().catch(() => {});
+					components = [
+						{
+							type: 1,
+							components: Object.keys(types).map((type) => {
+								if (button.customId === type + KEY) {
+									return {
+										type: 2,
+										style: 3,
+										label: types[type],
+										custom_id: type + KEY,
+										emoji: types[type],
+										disabled: true
+									};
+								} else
+									return {
+										type: 2,
+										style: 1,
+										label: types[type],
+										custom_id: type + KEY,
+										emoji: types[type]
+									};
+							})
+						},
+						{
+							type: 1,
+							components: [
+								{
+									type: 2,
+									style: 5,
+									label: 'الدعم الفني/Support',
+									url: client.config.Links.server
+								},
+								{
+									type: 2,
+									style: 5,
+									label: 'دعوة/Invite',
+									url: client.config.Links.invite
+								},
+								{
+									type: 2,
+									style: 5,
+									label: 'المصدر/Source',
+									url: 'https://github.com/4i8/quranbot.git'
+								}
+							]
+						}
+					];
+					embed(
+						interaction,
+						await Promise.all(
+							process.commandsCache[type].map(async (a) => `\`/${a}\`\n •  ` + (await resolveKey(interaction, `structure:${a}`)))
+						).then((a) => a.join('\n')),
+						'p-',
+						{
+							interaction: {
+								stats: true
+							},
+							components: components
+						}
+					);
+				}
+			});
+		});
 	}
 }
 

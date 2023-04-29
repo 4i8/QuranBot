@@ -27,9 +27,11 @@ class InVoicePrecondition extends AllFlowsPrecondition {
 	 * @param {import('discord.js').GuildMember} member
 	 */
 	async doInVoiceCheck(member) {
-		return member.voice.channel ? this.ok() : this.error({
-			message: await resolveKey(member, 'preconditions:in_voice')
-		});
+		return member.voice.channel
+			? this.ok()
+			: this.error({
+					message: await resolveKey(member, 'preconditions:in_voice')
+			  });
 	}
 }
 

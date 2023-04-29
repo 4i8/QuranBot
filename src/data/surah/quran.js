@@ -6518,7 +6518,7 @@ module.exports = {
         •نوع سورة\`مكية\` •عدد الايات \`19\`
 `,
 		nameall: 'سورة الطارق والأعلى',
-		nameall_en: 'Surah At-Taariq & Al-A\'laa',
+		nameall_en: "Surah At-Taariq & Al-A'laa",
 		transliteration_en: `
         Surah \`At-Taariq\`
 
@@ -6698,7 +6698,7 @@ module.exports = {
         
 `,
 		nameall: 'سورة القارعة والتكاثر',
-		nameall_en: 'Surah Al-Qaari\'a & At-Takaathur',
+		nameall_en: "Surah Al-Qaari'a & At-Takaathur",
 		transliteration_en: `
         Surah \`Al-Qaari'a\`
 
@@ -6764,7 +6764,7 @@ module.exports = {
         •نوع سورة\`مكية\` •عدد الايات \`3\`
 `,
 		nameall: 'سورة قريش والماعون والكوثر',
-		nameall_en: 'Surah Quraish & Al-Maa\'un & Al-Kawthar',
+		nameall_en: "Surah Quraish & Al-Maa'un & Al-Kawthar",
 		transliteration_en: `
         Surah \`Quraish\`
 

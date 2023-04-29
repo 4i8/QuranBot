@@ -28,68 +28,75 @@
 [ Go to English Version || الذهاب لنسخة الإنجليزية](README.md)
 
 ## الأخذ بعين الإعتبار
- - يمكن للمجتمع أن **يساهم** في إجراء تحسينات وإضافة ميزات جديدة.
- - **المشروع ليس من أجل الربح** ⚠
-	- لا يُسمح أبدًا ببيع هذا البوت وستتم مقاضاتك قانونيًا.
+
+-   يمكن للمجتمع أن **يساهم** في إجراء تحسينات وإضافة ميزات جديدة.
+-   **المشروع ليس من أجل الربح** ⚠
+    -   لا يُسمح أبدًا ببيع هذا البوت وستتم مقاضاتك قانونيًا.
 
 ## التثبيت
- 1. Clone QuranBot with `git clone`
-	 ```bash
-		git clone https://github.com/4i8/quranbot.git
-		cd quranbot
-	```
+
+1. Clone QuranBot with `git clone`
+    ```bash
+    	git clone https://github.com/4i8/quranbot.git
+    	cd quranbot
+    ```
 2. Install Packages
-	```bash
-		npm install
-	```
+    ```bash
+    	npm install
+    ```
+
 #### **Rename `src/config.example.json` to `src/config.json`**
 
-3. Add your Tokens to  `src/config.json`
-	```json
-	{
-		"BOT_TOKEN": "<REQUIRD>",
-		"TEST_BOT_TOKEN": "<REQUIRD>",
-		"Mongo_DB": "<REQUIRD>"
-	}
-	```
+3. Add your Tokens to `src/config.json`
+    ```json
+    {
+    	"BOT_TOKEN": "<REQUIRD>",
+    	"TEST_BOT_TOKEN": "<REQUIRD>",
+    	"Mongo_DB": "<REQUIRD>"
+    }
+    ```
 
 ## تشغيل محليًا
+
 ```bash
 	npm run start
 ```
 
 ## قائمة الأوامر
 
-| الأمر     | الوصف                                                           | الإستخدام \| أمثلة                                    | إضافي                                                                                                                                                   |
-|-------------|-----------------------------------------------------------------------|------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /play       | قم بتشغيل القرآن في قناة صوتية بأكثر من 130 قارئ   | /play "Ahmad Al-Hawashi" Al-Baqara                   | يدعم خاصية البحث بحيث تقوم بكتابة اسم السورة أو المقرئ أو رقم السورة أو رقم المقرئ ويعطيك خيارات |
-| /pause      | تعليق التلاوة.                                                 | /pause                                               |                                                                                                                                                              |
-| /resume     | إستئناف التلاوة.                                                | /resume                                              |                                                                                                                                                              |
-| /volume     | ضبط درجة الصوت في نطاق (10-150)                                 | /volume 55<br>/volume 88                             |                                                                                                                                                              |
-| /nowplaying | عرض معلومات حول ما يتم تشغيله الآن.                       | /nowplaying                                          |                                                                                                                                                              |
-| /queue      | عرض قائمة الإنتظار                                                     | /queue                                               |                                                                                                                                                              |
-| /loop       | تبديل وضع التكرار (تشغيل / إيقاف)                                         | /loop                                                |                                                                                                                                                              |
-| /seek       | القفز إلى وقت محدد في قائمة التشغيل.                              | /seek 2:30:10                                        |                                                                                                                                                              |
-| /skip       | تخطي إلى العنصر التالي في قائمة الانتظار                                    | /skip                                                |                                                                                                                                                              |
-| /stop       | مسح قائمة الانتظار ووقف التلاوة.                             | /stop                                                |                                                                                                                                                              |
-| /qasas      | تشغيل قصص الأنبياء                                    | /qasas ما قبل خلق آدم عليه السلام                    | The voice of Nabil Al-Awadi and Tariq Al-Suwaidan in high quality                                                                                            |
-| /quran      | عرض وتصفح القرآن الكريم .                       | /quran <surah\|page>                                 |                                                                                                                                                              |
-| /azkar      | ضبط إعدادات نظام الأذكار.                                     | /azkar < text-channnel > < periodic-time > < embed-color > | Azkar system: sends Azkar in text channel once in while.                                                                                                     |
-| /khutma     | ضبط إعدادات نظام الختمة.                                    | /khutma < text-channel > < periodic-time > < embed-color > |                                                                                                                                                              |
-| /language   | تغيير لغة البوت.                                       | /language <العربية\|English\|French>                 |                                                                                                                                                              |
-| /prayer     | ضبط إعدادات منبه الصلاة.                           | /prayer < text-channel > < country > < mention >           |                                                                                                                                                              |
-| /reset      | إعادة ضبط الدردشة (القناة النصية) لأنظمة الأذكار والخطمة والصلاة.     | /reset                                               |                                                                                                                                                              |
+| الأمر       | الوصف                                                             | الإستخدام \| أمثلة                                         | إضافي                                                                                            |
+| ----------- | ----------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| /play       | قم بتشغيل القرآن في قناة صوتية بأكثر من 130 قارئ                  | /play "Ahmad Al-Hawashi" Al-Baqara                         | يدعم خاصية البحث بحيث تقوم بكتابة اسم السورة أو المقرئ أو رقم السورة أو رقم المقرئ ويعطيك خيارات |
+| /pause      | تعليق التلاوة.                                                    | /pause                                                     |                                                                                                  |
+| /resume     | إستئناف التلاوة.                                                  | /resume                                                    |                                                                                                  |
+| /volume     | ضبط درجة الصوت في نطاق (10-150)                                   | /volume 55<br>/volume 88                                   |                                                                                                  |
+| /nowplaying | عرض معلومات حول ما يتم تشغيله الآن.                               | /nowplaying                                                |                                                                                                  |
+| /queue      | عرض قائمة الإنتظار                                                | /queue                                                     |                                                                                                  |
+| /loop       | تبديل وضع التكرار (تشغيل / إيقاف)                                 | /loop                                                      |                                                                                                  |
+| /seek       | القفز إلى وقت محدد في قائمة التشغيل.                              | /seek 2:30:10                                              |                                                                                                  |
+| /skip       | تخطي إلى العنصر التالي في قائمة الانتظار                          | /skip                                                      |                                                                                                  |
+| /stop       | مسح قائمة الانتظار ووقف التلاوة.                                  | /stop                                                      |                                                                                                  |
+| /qasas      | تشغيل قصص الأنبياء                                                | /qasas ما قبل خلق آدم عليه السلام                          | The voice of Nabil Al-Awadi and Tariq Al-Suwaidan in high quality                                |
+| /quran      | عرض وتصفح القرآن الكريم .                                         | /quran <surah\|page>                                       |                                                                                                  |
+| /azkar      | ضبط إعدادات نظام الأذكار.                                         | /azkar < text-channnel > < periodic-time > < embed-color > | Azkar system: sends Azkar in text channel once in while.                                         |
+| /khutma     | ضبط إعدادات نظام الختمة.                                          | /khutma < text-channel > < periodic-time > < embed-color > |                                                                                                  |
+| /language   | تغيير لغة البوت.                                                  | /language <العربية\|English\|French>                       |                                                                                                  |
+| /prayer     | ضبط إعدادات منبه الصلاة.                                          | /prayer < text-channel > < country > < mention >           |                                                                                                  |
+| /reset      | إعادة ضبط الدردشة (القناة النصية) لأنظمة الأذكار والخطمة والصلاة. | /reset                                                     |
+| /recovery      | تفعيل نظام الريكوفري في حالة تم إعادة تشغيل البوت | /recovery                                                     |
+
 
 ## المطورون
-- [@Arth(4i8)](https://github.com/4i8)
-- [@albatranomar](https://github.com/albatranomar)
+
+-   [@Arth(4i8)](https://github.com/4i8)
+-   [@albatranomar](https://github.com/albatranomar)
 
 ## رخصة
+
 [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
-  
-
 ## المساهمة
+
 المساهمات دائما موضع ترحيب!<br>
 أنظر `contributing.md` لمعرفة طرق البدء.<br>
 يرجى الالتزام "[بمدونة قواعد السلوك](https://github.com/4i8/QuranBot/blob/master/CODE_OF_CONDUCT.md)" الخاصة بهذا المشروع.

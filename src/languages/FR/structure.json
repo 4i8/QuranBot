@@ -1,0 +1,22 @@
+{
+	"loop": "Activer ou désactiver le mode de répétition (on/off)",
+	"nowplaying": "Afficher l'audio en cours de lecture",
+	"pause": "Mettre en pause l'audio. Vous pouvez reprendre l'audio en utilisant la commande `/resume`",
+	"play": "Jouer le Coran dans un canal vocal avec plus de 130 récitants",
+	"qasas": "Jouer les histoires des prophètes",
+	"queue": "Parcourir la liste de lecture",
+	"resume": "Reprendre l'audio",
+	"seek": "Avancer ou reculer l'audio",
+	"skip": "Passer à la piste audio suivante",
+	"stop": "Effacer la liste de lecture",
+	"volume": "Contrôler le niveau de volume",
+	"azkar": "Ajuster les paramètres du système Azkar.",
+	"khutma": "Ajuster les paramètres du système Khutma.",
+	"language": "Changer la langue du bot.",
+	"prayer": "Ajuster les paramètres du rappel de prière.",
+	"recovery": "Activer le système de récupération en cas de redémarrage du bot",
+	"reset": "Réinitialiser le chat (canal de texte) pour les systèmes Azkar, Khutma et Prière.",
+	"help": "Liste des commandes disponibles",
+	"ping": "Vérifier la vitesse du bot avec Discord",
+	"quran": "Le Saint Coran"
+}

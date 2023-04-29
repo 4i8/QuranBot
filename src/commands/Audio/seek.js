@@ -3,7 +3,6 @@ const { toMilliseconds } = require('colon-notation');
 const { Command } = require('@sapphire/framework');
 const { embed, resolveKey } = require('../../lib/structures/exports');
 
-
 class SeekCommand extends Command {
 	/**
 	 *
@@ -57,42 +56,54 @@ class SeekCommand extends Command {
 		if (time <= duration) {
 			if (time > position) {
 				player.seek(time);
-				return embed(interaction, await resolveKey(interaction, "commands:seek_forward", {
-					replace: {
-						emoji: emojiforward,
-						time: `${convertTime(time)} - ${convertTime(duration)}`
+				return embed(
+					interaction,
+					await resolveKey(interaction, 'commands:seek_forward', {
+						replace: {
+							emoji: emojiforward,
+							time: `${convertTime(time)} - ${convertTime(duration)}`
+						}
+					}),
+					'p-',
+					{
+						interaction: {
+							stats: true
+						}
 					}
-				}),
-				 'p-', {
-					interaction: {
-						stats: true
-					}
-				});
+				);
 			} else {
 				player.seek(time);
-				return embed(interaction, await resolveKey(interaction, "commands:seek_backward", {
+				return embed(
+					interaction,
+					await resolveKey(interaction, 'commands:seek_backward', {
+						replace: {
+							emoji: emojirewind,
+							time: `${convertTime(time)} - ${convertTime(duration)}`
+						}
+					}),
+					'p-',
+					{
+						interaction: {
+							stats: true
+						}
+					}
+				);
+			}
+		} else {
+			return embed(
+				interaction,
+				await resolveKey(interaction, 'commands:seek_error', {
 					replace: {
-						emoji: emojirewind,
-						time: `${convertTime(time)} - ${convertTime(duration)}`
+						emoji: client.emoji.warn
 					}
 				}),
-				 'p-', {
+				'p-',
+				{
 					interaction: {
 						stats: true
 					}
-				});
-			}
-		} else {
-			return embed(interaction, await resolveKey(interaction, 'commands:seek_error', {
-				replace: {
-					emoji: client.emoji.warn
 				}
-			}),
-			 'p-', {
-				interaction: {
-					stats: true
-				}
-			});
+			);
 		}
 	}
 }
