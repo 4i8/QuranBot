@@ -48,7 +48,6 @@ class HelpCommand extends Command {
 					return {
 						type: 2,
 						style: 1,
-						label: types[type],
 						custom_id: type + KEY,
 						emoji: types[type]
 					};
@@ -115,7 +114,6 @@ class HelpCommand extends Command {
 									return {
 										type: 2,
 										style: 3,
-										label: types[type],
 										custom_id: type + KEY,
 										emoji: types[type],
 										disabled: true
@@ -124,7 +122,6 @@ class HelpCommand extends Command {
 									return {
 										type: 2,
 										style: 1,
-										label: types[type],
 										custom_id: type + KEY,
 										emoji: types[type]
 									};

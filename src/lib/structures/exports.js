@@ -200,7 +200,7 @@ module.exports = {
 					format: 'png',
 					size: 4096
 				})
-			});
+			}).setFooter("/recovery "+await resolveKey(message, 'structure:recovery'))
 			if (color.toUpperCase() == 'P' || color.toUpperCase().split('!')[1] == 'P') {
 				auto.setDescription(
 					`**${Description} - ${emoji.True}${options.isplay ? `\n${await resolveKey(message, 'commands:alert_voice')}` : ''}**`
