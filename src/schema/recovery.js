@@ -9,4 +9,4 @@ const Schema = new mongoose.Schema({
 	voiceID: String,
 	key: String
 });
-module.exports = mongoose.model('recoverytest', Schema);
+module.exports = mongoose.model('recovery', Schema);
