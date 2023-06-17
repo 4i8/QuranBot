@@ -21,10 +21,6 @@ class NodeConnectEvent extends Listener {
 	}
 
 	async run(node) {
-		let ext = {
-			num: 0,
-			stats: false
-		};
 		const { client } = this.container;
 		// client.manager.destroy();
 		this.container.logger.info(`Node "${node.options.identifier}" connected.`);
