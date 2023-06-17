@@ -19,7 +19,7 @@
 		"@sapphire/plugin-logger": "next",
 		"@sapphire/plugin-subcommands": "next",
 		"@sapphire/time-utilities": "^1.7.5",
-		"@sapphire/type": "^2.2.4",
+		"@sapphire/type": "^2.4.0",
 		"@sapphire/utilities": "^3.9.1",
 		"chalk": "^4.1.2",
 		"clinei": "^1.0.1",

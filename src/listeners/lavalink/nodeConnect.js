@@ -27,18 +27,16 @@ class NodeConnectEvent extends Listener {
 		};
 		const { client } = this.container;
 		// client.manager.destroy();
-		setTimeout(() => {
-			this.container.logger.info(`Node "${node.options.identifier}" connected.`);
-		}, 2000);
+		this.container.logger.info(`Node "${node.options.identifier}" connected.`);
 		recoverySchema.find({}).then(async (a) => {
 			for (var i = 0; i < a.length; i++) {
-				let b = a[0];
+				let b = a[i];
 				if (!process.cache.recovery[b.guildID]) {
 					process.cache.recovery[b.guildID] = {
 						stats: true
 					};
 				}
-
+				if (!client.guilds.cache.get(b.guildID)) continue;
 				try {
 					var FindGuild = await guildSchema.findOne({
 						guildID: b.guildID
@@ -57,7 +55,7 @@ class NodeConnectEvent extends Listener {
 					!voice.permissionsFor(client.user.id).has([Permissions.FLAGS.CONNECT, Permissions.FLAGS.SPEAK, Permissions.FLAGS.VIEW_CHANNEL])
 				) {
 					delete process.cache.recovery[b.guildID];
-					return;
+					continue;
 				}
 				setTimeout(() => {
 					delete process.cache.recovery[b.guildID];
@@ -164,7 +162,7 @@ class NodeConnectEvent extends Listener {
 					return delete process.cache.recovery[b.guildID];
 				}
 				await delay(check.includes('all') ? 2000 : 10);
-				switch (res.loadType) {
+				switch (res?.loadType) {
 					case 'LOAD_FAILED':
 						if (check.includes('error_all')) return;
 						conv.kill();
