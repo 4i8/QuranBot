@@ -3,6 +3,7 @@ const ms = require('ms');
 const { embed, resolveKey } = require('../../lib/structures/exports');
 const guildSchema = require('../../schema/guild');
 const PrayerData = require('../../data/prayer.json').countries;
+const debug = require('debug')('bot:prayer');
 class PrayerCommand extends Command {
 	/**
 	 *
@@ -56,13 +57,17 @@ class PrayerCommand extends Command {
 	 * @param {Command.AutocompleteInteraction} interaction
 	 */
 	async autocompleteRun(interaction) {
-		const focused = interaction.options.getFocused(true);
-		let language = (await guildSchema.findOne({ guildID: interaction.guild.id }).then((res) => res.language)) || 'AR';
-		if (focused.name == 'الدولةcountry') {
-			const filtered = PrayerData.filter(
-				(Prayer) => Prayer.name.includes(focused.value) || Prayer.en_name.toLowerCase().includes(focused.value.toLowerCase())
-			).slice(0, 25);
-			await interaction.respond(filtered.map((a) => ({ name: `${language === 'AR' ? a.name : a.en_name}`, value: a.country.toString() })));
+		try {
+			const focused = interaction.options.getFocused(true);
+			let language = (await guildSchema.findOne({ guildID: interaction.guild.id }).then((res) => res.language)) || 'AR';
+			if (focused.name == 'الدولةcountry') {
+				const filtered = PrayerData.filter(
+					(Prayer) => Prayer.name.includes(focused.value) || Prayer.en_name.toLowerCase().includes(focused.value.toLowerCase())
+				).slice(0, 25);
+				await interaction.respond(filtered.map((a) => ({ name: `${language === 'AR' ? a.name : a.en_name}`, value: a.country.toString() })));
+			}
+		} catch (err) {
+			debug(err);
 		}
 	}
 	/**
@@ -122,10 +127,9 @@ class PrayerCommand extends Command {
 			if (CreateWebhook?.status) {
 				return embed(
 					interaction,
-					`${
-						CreateWebhook.code === 30007
-							? await resolveKey(interaction, 'commands:webhookerror_30007')
-							: await resolveKey(interaction, 'commands:webhookerror')
+					`${CreateWebhook.code === 30007
+						? await resolveKey(interaction, 'commands:webhookerror_30007')
+						: await resolveKey(interaction, 'commands:webhookerror')
 					}`,
 					`e`,
 					{
@@ -182,10 +186,9 @@ class PrayerCommand extends Command {
 			if (CreateWebhook?.status) {
 				return embed(
 					interaction,
-					`${
-						CreateWebhook.code === 30007
-							? await resolveKey(interaction, 'commands:webhookerror_30007')
-							: await resolveKey(interaction, 'commands:webhookerror')
+					`${CreateWebhook.code === 30007
+						? await resolveKey(interaction, 'commands:webhookerror_30007')
+						: await resolveKey(interaction, 'commands:webhookerror')
 					}`,
 					`e`,
 					{

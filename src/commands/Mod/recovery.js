@@ -6,6 +6,7 @@ const { embed, resolveKey } = require('../../lib/structures/exports');
 const guildSchema = require('../../schema/guild');
 const stringSimilarity = require('string-similarity');
 const recoverySchema = require('../../schema/recovery.js');
+const debug = require('debug')('bot:recovery');
 class RecoveryCommand extends Command {
 	/**
 	 *
@@ -54,12 +55,13 @@ class RecoveryCommand extends Command {
 	 * @param {Command.AutocompleteInteraction} interaction
 	 */
 	async autocompleteRun(interaction) {
-		let language = (await guildSchema.findOne({ guildID: interaction.guild.id }).then((res) => res.language)) || 'AR';
-		const focused = interaction.options.getFocused(true);
-		if (focused.name == 'السورة-surah') {
-			const matches = stringSimilarity.findBestMatch(
-				focused.value,
-				surahs.map((surah) => surah.name) ||
+		try {
+			let language = (await guildSchema.findOne({ guildID: interaction.guild.id }).then((res) => res.language)) || 'AR';
+			const focused = interaction.options.getFocused(true);
+			if (focused.name == 'السورة-surah') {
+				const matches = stringSimilarity.findBestMatch(
+					focused.value,
+					surahs.map((surah) => surah.name) ||
 					stringSimilarity.findBestMatch(
 						focused.value,
 						surahs.map((surah) => surah.transliteration_en)
@@ -68,45 +70,56 @@ class RecoveryCommand extends Command {
 						focused.value,
 						surahs.map((surah) => surah.id.toString())
 					)
-			);
-			const filtered = [
-				{
-					id: 0,
-					name: 'القرآن كاملاً',
-					transliteration_en: 'The whole Quran'
-				}
-			];
-			filtered.push(
-				...surahs
-					.filter((surah, index) =>
-						matches.ratings > 0
-							? (surah.id == parseInt(focused.value) ||
+				);
+				const filtered = [
+					{
+						id: 0,
+						name: 'القرآن كاملاً',
+						transliteration_en: 'The whole Quran'
+					}
+				];
+				filtered.push(
+					...surahs
+						.filter((surah, index) =>
+							matches.ratings > 0
+								? (surah.id == parseInt(focused.value) ||
 									surah.name.includes(focused.value) ||
 									surah.transliteration_en.includes(focused.value)) &&
-							  index !== matches.bestMatchIndex
-							: surah.id == parseInt(focused.value) ||
-							  surah.name.includes(focused.value) ||
-							  surah.transliteration_en.includes(focused.value)
-					)
-					.concat(matches.ratings > 0 ? surahs[matches.bestMatchIndex] : [])
-					.slice(0, 24)
-			);
-			await interaction.respond(
-				filtered.map((s) => ({
-					name: `${s.id == `0` ? '' : `${s.id}-`}${language !== 'AR' ? s.transliteration_en : s.name}`,
-					value: s.id.toString()
-				}))
-			);
-		} else if (focused.name == 'القارئ-reader') {
-			const filtered = readers
-				.filter((reader) => reader.id === focused.value || reader.name.includes(focused.value) || reader.name_en.includes(focused.value))
-				.slice(0, 25);
-			await interaction.respond(
-				filtered.map((r) => ({
-					name: `${r.id}-${language !== 'AR' ? r.name_en : r.name} ${r?.rewaya ? `(${r.rewaya})` : ''}`,
-					value: r.id.toString()
-				}))
-			);
+								index !== matches.bestMatchIndex
+								: surah.id == parseInt(focused.value) ||
+								surah.name.includes(focused.value) ||
+								surah.transliteration_en.includes(focused.value)
+						)
+						.concat(matches.ratings > 0 ? surahs[matches.bestMatchIndex] : [])
+						.slice(0, 24)
+				);
+				try {
+					await interaction.respond(
+						filtered.map((s) => ({
+							name: `${s.id == `0` ? '' : `${s.id}-`}${language !== 'AR' ? s.transliteration_en : s.name}`,
+							value: s.id.toString()
+						}))
+					);
+				} catch (error) {
+					debug(error);
+				}
+			} else if (focused.name == 'القارئ-reader') {
+				const filtered = readers
+					.filter((reader) => reader.id === focused.value || reader.name.includes(focused.value) || reader.name_en.includes(focused.value))
+					.slice(0, 25);
+				try {
+					await interaction.respond(
+						filtered.map((r) => ({
+							name: `${r.id}-${language !== 'AR' ? r.name_en : r.name} ${r?.rewaya ? `(${r.rewaya})` : ''}`,
+							value: r.id.toString()
+						}))
+					);
+				} catch (error) {
+					debug(error);
+				}
+			}
+		} catch (error) {
+			debug(error);
 		}
 	}
 

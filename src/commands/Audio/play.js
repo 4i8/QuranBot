@@ -11,7 +11,7 @@ const ms = require('ms');
 const extra = require('../../lib/utils/extra');
 const guildSchema = require('../../schema/guild');
 const stringSimilarity = require('string-similarity');
-
+const debug = require('debug')('bot:play');
 class PlayCommand extends Command {
 	/**
 	 *
@@ -60,12 +60,13 @@ class PlayCommand extends Command {
 	 * @param {Command.AutocompleteInteraction} interaction
 	 */
 	async autocompleteRun(interaction) {
-		let language = (await guildSchema.findOne({ guildID: interaction.guild.id }).then((res) => res.language)) || 'AR';
-		const focused = interaction.options.getFocused(true);
-		if (focused.name == 'السورة-surah') {
-			const matches = stringSimilarity.findBestMatch(
-				focused.value,
-				surahs.map((surah) => surah.name) ||
+		try {
+			let language = (await guildSchema.findOne({ guildID: interaction.guild.id }).then((res) => res.language)) || 'AR';
+			const focused = interaction.options.getFocused(true);
+			if (focused.name == 'السورة-surah') {
+				const matches = stringSimilarity.findBestMatch(
+					focused.value,
+					surahs.map((surah) => surah.name) ||
 					stringSimilarity.findBestMatch(
 						focused.value,
 						surahs.map((surah) => surah.transliteration_en)
@@ -74,45 +75,56 @@ class PlayCommand extends Command {
 						focused.value,
 						surahs.map((surah) => surah.id.toString())
 					)
-			);
-			const filtered = [
-				{
-					id: 0,
-					name: 'القرآن كاملاً',
-					transliteration_en: 'The whole Quran'
-				}
-			];
-			filtered.push(
-				...surahs
-					.filter((surah, index) =>
-						matches.ratings > 0
-							? (surah.id == parseInt(focused.value) ||
+				);
+				const filtered = [
+					{
+						id: 0,
+						name: 'القرآن كاملاً',
+						transliteration_en: 'The whole Quran'
+					}
+				];
+				filtered.push(
+					...surahs
+						.filter((surah, index) =>
+							matches.ratings > 0
+								? (surah.id == parseInt(focused.value) ||
 									surah.name.includes(focused.value) ||
 									surah.transliteration_en.includes(focused.value)) &&
-							  index !== matches.bestMatchIndex
-							: surah.id == parseInt(focused.value) ||
-							  surah.name.includes(focused.value) ||
-							  surah.transliteration_en.includes(focused.value)
-					)
-					.concat(matches.ratings > 0 ? surahs[matches.bestMatchIndex] : [])
-					.slice(0, 24)
-			);
-			await interaction.respond(
-				filtered.map((s) => ({
-					name: `${s.id == `0` ? '' : `${s.id}-`}${language !== 'AR' ? s.transliteration_en : s.name}`,
-					value: s.id.toString()
-				}))
-			);
-		} else if (focused.name == 'القارئ-reader') {
-			const filtered = readers
-				.filter((reader) => reader.id === focused.value || reader.name.includes(focused.value) || reader.name_en.includes(focused.value))
-				.slice(0, 25);
-			await interaction.respond(
-				filtered.map((r) => ({
-					name: `${r.id}-${language !== 'AR' ? r.name_en : r.name} ${r?.rewaya ? `(${r.rewaya})` : ''}`,
-					value: r.id.toString()
-				}))
-			);
+								index !== matches.bestMatchIndex
+								: surah.id == parseInt(focused.value) ||
+								surah.name.includes(focused.value) ||
+								surah.transliteration_en.includes(focused.value)
+						)
+						.concat(matches.ratings > 0 ? surahs[matches.bestMatchIndex] : [])
+						.slice(0, 24)
+				);
+				try {
+					await interaction.respond(
+						filtered.map((s) => ({
+							name: `${s.id == `0` ? '' : `${s.id}-`}${language !== 'AR' ? s.transliteration_en : s.name}`,
+							value: s.id.toString()
+						}))
+					);
+				} catch (error) {
+					debug(error);
+				}
+			} else if (focused.name == 'القارئ-reader') {
+				const filtered = readers
+					.filter((reader) => reader.id === focused.value || reader.name.includes(focused.value) || reader.name_en.includes(focused.value))
+					.slice(0, 25);
+				try {
+					await interaction.respond(
+						filtered.map((r) => ({
+							name: `${r.id}-${language !== 'AR' ? r.name_en : r.name} ${r?.rewaya ? `(${r.rewaya})` : ''}`,
+							value: r.id.toString()
+						}))
+					);
+				} catch (error) {
+					debug(error);
+				}
+			}
+		} catch (error) {
+			debug(error);
 		}
 	}
 
@@ -238,7 +250,7 @@ class PlayCommand extends Command {
 						return embed(
 							interaction,
 							(await resolveKey(interaction, 'commands:play_download_error')) +
-								`\`\`\`\n{"surah":"${surah.name}",\n"reader":"${reader.name}",\n"rewaya":"${reader.rewaya}"\n}\n\`\`\``,
+							`\`\`\`\n{"surah":"${surah.name}",\n"reader":"${reader.name}",\n"rewaya":"${reader.rewaya}"\n}\n\`\`\``,
 							'e',
 							{
 								interaction: {
@@ -250,15 +262,13 @@ class PlayCommand extends Command {
 						extra(res, {
 							voice: interaction.member.voice.channelId,
 							text: interaction.member.voice.channelId,
-							title: `${await resolveKey(interaction, 'extra:suratarrangement')}\`${surahs[index].id}\` - ${
-								'AR' == 'AR'
-									? surahs[index].name
-									: surahs[index].transliteration == 'All Quran'
+							title: `${await resolveKey(interaction, 'extra:suratarrangement')}\`${surahs[index].id}\` - ${'AR' == 'AR'
+								? surahs[index].name
+								: surahs[index].transliteration == 'All Quran'
 									? 'All Quran'
 									: 'Surat ' + surahs[index].transliteration
-							}\`[${convertTime(res.tracks[0].duration)}]\` ${await resolveKey(interaction, 'extra:quran_reders')} ${reader.name}${
-								reader?.rewaya ? `(${reader.rewaya})` : ''
-							}`,
+								}\`[${convertTime(res.tracks[0].duration)}]\` ${await resolveKey(interaction, 'extra:quran_reders')} ${reader.name}${reader?.rewaya ? `(${reader.rewaya})` : ''
+								}`,
 							recovery: false
 						});
 						all[index] = res;
@@ -270,11 +280,11 @@ class PlayCommand extends Command {
 									return player.play();
 								}
 							})
-							.catch(() => {});
+							.catch(() => { });
 					}
 				});
 				surah.audio.forEach(async (element) => {
-					conv.add(element).catch(() => {});
+					conv.add(element).catch(() => { });
 				});
 				conv.on('end', async () => {
 					delete process.cache.await[interaction.guildId];
@@ -292,7 +302,7 @@ class PlayCommand extends Command {
 					return embed(
 						interaction,
 						(await resolveKey(interaction, 'commands:play_download_error')) +
-							`\`\`\`\n{"surah":"${surah.name}",\n"reader":"${reader.name}",\n"rewaya":"${reader.rewaya}"\n}\n\`\`\``,
+						`\`\`\`\n{"surah":"${surah.name}",\n"reader":"${reader.name}",\n"rewaya":"${reader.rewaya}"\n}\n\`\`\``,
 						'e',
 						{
 							interaction: {
@@ -304,11 +314,9 @@ class PlayCommand extends Command {
 					extra(res, {
 						voice: interaction.member.voice.channelId,
 						text: interaction.member.voice.channelId,
-						title: `${await resolveKey(interaction, 'extra:suratarrangement')}\`${surah.id}\` - ${
-							'AR' == 'AR' ? surah.name : surah.transliteration == 'All Quran' ? 'All Quran' : 'Surat ' + surah.transliteration
-						}\`[${convertTime(res.tracks[0]?.duration)}]\` ${await resolveKey(interaction, 'extra:quran_reders')} ${reader.name}${
-							reader?.rewaya ? `(${reader.rewaya})` : ''
-						}`,
+						title: `${await resolveKey(interaction, 'extra:suratarrangement')}\`${surah.id}\` - ${'AR' == 'AR' ? surah.name : surah.transliteration == 'All Quran' ? 'All Quran' : 'Surat ' + surah.transliteration
+							}\`[${convertTime(res.tracks[0]?.duration)}]\` ${await resolveKey(interaction, 'extra:quran_reders')} ${reader.name}${reader?.rewaya ? `(${reader.rewaya})` : ''
+							}`,
 						recovery: false
 					});
 				}
@@ -330,7 +338,7 @@ class PlayCommand extends Command {
 					return embed(
 						interaction,
 						(await resolveKey(interaction, 'commands:play_download_error')) +
-							`\`\`\`\n{"surah":"${surah.name}",\n"reader":"${reader.name}",\n"rewaya":"${reader.rewaya}"\n}\n\`\`\``,
+						`\`\`\`\n{"surah":"${surah.name}",\n"reader":"${reader.name}",\n"rewaya":"${reader.rewaya}"\n}\n\`\`\``,
 						'e',
 						{
 							interaction: {
@@ -370,7 +378,7 @@ class PlayCommand extends Command {
 						player.queue.add(track);
 						if (!player.playing && !player.paused && !player.queue.size) {
 							if (interaction.member.voice.channelId === interaction.channelId) {
-								interaction.deleteReply().catch(() => {});
+								interaction.deleteReply().catch(() => { });
 							}
 							if (interaction.member.voice.channelId !== interaction.channelId) {
 								embed(interaction, await resolveKey(interaction, 'commands:alert_voice'), 'p', {
@@ -452,7 +460,7 @@ class PlayCommand extends Command {
 				play();
 			}, ms('30s'));
 			collector.on('collect', async (button) => {
-				await button.deferUpdate().catch(() => {});
+				await button.deferUpdate().catch(() => { });
 				clearTimeout(CacheTimeOut);
 				if (button.customId === 'yes' + KEY) {
 					FindGuild.loop = true;

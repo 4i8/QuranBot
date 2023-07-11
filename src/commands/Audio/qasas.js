@@ -8,6 +8,7 @@ const ms = require('ms');
 const extra = require('../../lib/utils/extra');
 const guildSchema = require('../../schema/guild');
 const stringSimilarity = require('string-similarity');
+const debug = require('debug')('bot:qasas');
 class QasasCommand extends Command {
 	/**
 	 *
@@ -49,21 +50,29 @@ class QasasCommand extends Command {
 	 * @param {Command.AutocompleteInteraction} interaction
 	 */
 	async autocompleteRun(interaction) {
-		const focused = interaction.options.getFocused(true);
-		if (focused.name == 'القصة') {
-			const matches = stringSimilarity.findBestMatch(
-				focused.value,
-				alqsaas.map((x) => x.qsa)
-			);
-			const filtered = alqsaas
-				.filter(
-					(reader, index) =>
-						(reader.id === parseInt(focused.value) || reader.name.includes(focused.value) || reader.qsa.includes(focused.value)) &&
-						index !== matches.bestMatchIndex
-				)
-				.concat(alqsaas[matches.bestMatchIndex])
-				.slice(0, 25);
-			await interaction.respond(filtered.map((r) => ({ name: `${r.id}-${r?.qsa} (${r?.name})`, value: r.id.toString() })));
+		try {
+			const focused = interaction.options.getFocused(true);
+			if (focused.name == 'القصة') {
+				const matches = stringSimilarity.findBestMatch(
+					focused.value,
+					alqsaas.map((x) => x.qsa)
+				);
+				const filtered = alqsaas
+					.filter(
+						(reader, index) =>
+							(reader.id === parseInt(focused.value) || reader.name.includes(focused.value) || reader.qsa.includes(focused.value)) &&
+							index !== matches.bestMatchIndex
+					)
+					.concat(alqsaas[matches.bestMatchIndex])
+					.slice(0, 25);
+				try {
+					await interaction.respond(filtered.map((r) => ({ name: `${r.id}-${r?.qsa} (${r?.name})`, value: r.id.toString() })));
+				} catch (error) {
+					debug(error);
+				}
+			}
+		} catch (error) {
+			debug(error);
 		}
 	}
 
@@ -170,7 +179,7 @@ class QasasCommand extends Command {
 				return embed(
 					interaction,
 					(await resolveKey(interaction, 'commands:play_download_error')) +
-						`\`\`\`\n{"alqsaa":"${alqsaa.name}",\n"qssa":"${alqsaa.qsa}"\n}\n\`\`\``,
+					`\`\`\`\n{"alqsaa":"${alqsaa.name}",\n"qssa":"${alqsaa.qsa}"\n}\n\`\`\``,
 					'e',
 					{
 						interaction: {
@@ -202,7 +211,7 @@ class QasasCommand extends Command {
 					return embed(
 						interaction,
 						(await resolveKey(interaction, 'commands:play_download_error')) +
-							`\`\`\`\n{"alqsaa":"${alqsaa.name}",\n"qssa":"${alqsaa.qsa}"\n}\n\`\`\``,
+						`\`\`\`\n{"alqsaa":"${alqsaa.name}",\n"qssa":"${alqsaa.qsa}"\n}\n\`\`\``,
 						'e',
 						{
 							interaction: {
@@ -222,7 +231,7 @@ class QasasCommand extends Command {
 					player.queue.add(track);
 					if (!player.playing && !player.paused && !player.queue.size) {
 						if (interaction.member.voice.channelId === interaction.channelId) {
-							interaction.deleteReply().catch(() => {});
+							interaction.deleteReply().catch(() => { });
 						}
 						if (interaction.member.voice.channelId !== interaction.channelId) {
 							embed(interaction, await resolveKey(interaction, 'commands:alert_voice'), 'p', {
@@ -303,7 +312,7 @@ class QasasCommand extends Command {
 				play();
 			}, ms('30s'));
 			collector.on('collect', async (button) => {
-				await button.deferUpdate().catch(() => {});
+				await button.deferUpdate().catch(() => { });
 				clearTimeout(CacheTimeOut);
 				if (button.customId === 'yes' + KEY) {
 					FindGuild.loop = true;

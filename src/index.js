@@ -1,6 +1,9 @@
 const [test] = process.argv.slice(2);
 const buildStructure = require('./structure');
+let num = 0;
 buildStructure().then((a) => {
+	num++;
+	if (num >= 5) throw new Error('Failed to build structure');
 	if (a.length) {
 		throw a.join('\n');
 	}

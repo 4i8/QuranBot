@@ -25,11 +25,13 @@
 		"clinei": "^1.0.1",
 		"colon-notation": "^1.2.1",
 		"convert-time": "^0.3.0",
+		"debug": "^4.3.4",
 		"delay": "^5.0.0",
 		"discord.js": "^13.15.1",
 		"easy-discord-components": "^1.0.2",
 		"erela.js": "^2.3.3",
 		"fix-arabic-numbers": "^0.0.3",
+		"flowe": "^0.0.1",
 		"glob": "^8.0.3",
 		"humanize-duration": "^3.27.3",
 		"lodash": "^4.17.21",
@@ -39,7 +41,8 @@
 		"node-fetch": "^2.6.1",
 		"set-interval": "^2.1.3",
 		"string-similarity": "^4.0.4",
-		"tacs": "^1.4.6"
+		"tacs": "^1.4.6",
+		"trymore": "^0.0.1"
 	},
 	"devDependencies": {
 		"@sapphire/prettier-config": "^1.4.3",
