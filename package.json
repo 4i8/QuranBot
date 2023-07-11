@@ -1,6 +1,6 @@
 {
 	"name": "quranbot",
-	"version": "1.4.1",
+	"version": "1.4.2",
 	"main": "src/shard.js",
 	"author": "@Arth | @omar",
 	"contributors": [
